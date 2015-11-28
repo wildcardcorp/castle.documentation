@@ -11,7 +11,7 @@
 Introduction
 ============
 
-Nginx is an modern alternative server to Apache.
+Nginx is an HTTP and reverse proxy server, a mail proxy server, and a generic TCP proxy server alternative to Apache.
 
 * It acts as a proxy server and load balancer in front of Zope.
 * It handles rewrite rules.
@@ -48,7 +48,7 @@ Create file ``/etc/nginx/sites-available/yoursite.conf`` with contents::
     # This specifies which IP and port Plone is running on.
     # The default is 127.0.0.1:8080
     upstream plone {
-        server 127.0.0.1:8090;
+        server 127.0.0.1:8080;
     }
 
     # Redirect all www-less traffic to the www.site.com domain
@@ -109,6 +109,14 @@ To enable it, replace the Content-Security-Policy-Report-Only by Content-Securit
 The example above works with Plone 4.x and up (including TinyMCE) but it very wide. You may need to adjust it if you want to make CSP more restrictive or use additional Plone Products. For more information, see
 
 *  http://www.w3.org/TR/CSP/
+
+
+Securing Plone Sites With HTTPS
+================================
+The simplest way to protect confidential data a bit better is to serve your web site using only HTTPS.
+
+HERECOMESTHEREST
+
 
 Buildout and recipe
 ====================
@@ -302,9 +310,6 @@ More info on nginx redirects
 * http://scott.yang.id.au/2007/04/do-you-need-permalink-redirect/
 
 
-
-
-
 Make nginx aware where the request came from
 =============================================
 
@@ -346,7 +351,7 @@ A detailed tutorial on how to set it all up, configure and run it can be found h
 
 
 SSI: server-side include
-==========================
+========================
 
 In order to include external content in a page (XDV), we must set up nginx to make these includes for us.
 For including external content we will use the SSI (server-side include) method, which means that on each request nginx will get the needed external content, put it in place and only then return the response.
@@ -422,7 +427,7 @@ If you have site functionality which stores user-specific data on the server, le
 Make sure that your :doc:`Zope session cookie </develop/plone/sessions/cookies>` are not cleared by any front-end server (nginx, Varnish).
 
 By using IP addresses
--------------------------
+----------------------
 
 This is the most reliable way. nginx will balance each incoming request to a front end client by the request's source IP address.
 
@@ -431,7 +436,7 @@ This method is reliable as long as nginx can correctly extract IP address from t
 * http://wiki.nginx.org/NginxHttpUpstreamModule#ip_hash
 
 By using cookies
-------------------
+----------------
 
 These instructions assume you are installing nginx via buildout.
 
@@ -538,20 +543,12 @@ More info
 
 * http://nathanvangheem.com/news/nginx-with-built-in-load-balancing-and-caching
 
-
-Securing Plone-Sites with https and nginx
-=========================================
-
-For instructions how to use SSL for all authenticated traffic see this blog-post:
-
-* http://www.starzel.de/blog/securing-plone-sites-with-https-and-nginx
-
 Setting log files
-=============================
+=================
 
 nginx.conf example::
 
-    worker_processes 2;
+    worker_processes auto;
     error_log /srv/site/Plone/zinstance/var/log/nginx-error.log warn;
 
     events {
@@ -609,7 +606,7 @@ Enabling gzip compression
 
 Enabling gzip compression in Nginx will make your web sites respond much more quickly for your web site users and will reduce the amount of bandwidth used by your web sites.
 
-Instructions for enabling gzip in Nginx: 
+Instructions for enabling gzip in Nginx:
 
 * https://varvy.com/pagespeed/enable-compression.html
 * https://www.nginx.com/resources/admin-guide/compression-and-decompression/
