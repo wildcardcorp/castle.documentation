@@ -17,10 +17,10 @@ Nginx is an HTTP and reverse proxy server, a mail proxy server, and a generic TC
 * It handles rewrite rules.
 * It handles HTTPS.
 
-Minimal Nginx front end configuration for Plone on Ubuntu/Debian Linux
-=======================================================================
+Minimal Nginx front end configuration for Plone on Ubuntu Linux
+================================================================
 
-This is a minimal configuration to run nginx on Ubuntu/Debian in front of a Plone site.
+This is a minimal configuration to run Nginx on Ubuntu in front of a Plone site.
 These instructions are *not* for configurations where one uses the buildout configuration tool to build a static Nginx server.
 
 * Plone will by default be served on port 8080.
