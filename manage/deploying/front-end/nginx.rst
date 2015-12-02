@@ -22,11 +22,23 @@ Minimal Nginx front end configuration for Plone on Ubuntu
 
 This is a minimal configuration to run Nginx on Ubuntu in front of a Plone site.
 
-## ADD NOTE ABOUT INSTALLATION
-
 The suggest method to install Nginx is to use your OS package manager.
-You always should use your system package manager to install
-These instructions are *not* for configurations where one uses the buildout configuration tool to build a static Nginx server.
+
+.. code-block:: bash
+
+    $ sudo apt-get update
+    $ sudo apt-get install nginx
+
+If for some reason, you need a newer version, you can also install Nginx from the nginx.org ubuntu repository.
+
+To do so please follow `their install instructions <http://nginx.org/en/linux_packages.html#stable>`_.
+
+If you you **know** what you are doing and you have **experience** you can also use :doc: `buildout <buildout-nginx>` to install and configure Nginx.
+
+.. note::
+
+    For most cases the installation via your OS package manager is good enough !
+
 
 * Plone will by default be served on port 8080.
 
