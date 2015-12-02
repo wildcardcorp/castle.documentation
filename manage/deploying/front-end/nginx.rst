@@ -4,23 +4,26 @@
 
 .. admonition:: Description
 
-    Using the nginx web server to host Plone sites
+    Using Nginx to serve Plone sites
 
 .. contents:: :local:
 
 Introduction
 ============
 
-Nginx is an HTTP and reverse proxy server, a mail proxy server, and a generic TCP proxy server alternative to Apache.
+`Nginx <http://nginx.org>`_ is an HTTP and reverse proxy server, a mail proxy server, and a generic TCP proxy server alternative to `Apache <https://httpd.apache.org/>`_.
 
 * It acts as a proxy server and load balancer in front of Zope.
 * It handles rewrite rules.
 * It handles HTTPS.
 
-Minimal Nginx front end configuration for Plone on Ubuntu Linux
-================================================================
+Minimal Nginx front end configuration for Plone on Ubuntu
+=========================================================
 
 This is a minimal configuration to run Nginx on Ubuntu in front of a Plone site.
+
+## ADD NOTE ABOUT INSTALLATION
+You always should use your system package manager to install
 These instructions are *not* for configurations where one uses the buildout configuration tool to build a static Nginx server.
 
 * Plone will by default be served on port 8080.
@@ -34,6 +37,8 @@ These instructions are *not* for configurations where one uses the buildout conf
 * The URL passed to VirtualHostMonster is the URL Plone uses to construct links in the template (``portal_url`` in the code, also used by content ``absolute_url()`` method). If your site loads without CSS styles usually it is a sign that VirtualHostMonster URL is incorrectly written -- Plone uses the URL to link stylesheets also.
 
 * Plone itself contains a mini web server (Medusa) which serves the requests from port 8080 -- Nginx acts simple as a HTTP proxy between Medusa and outgoing port 80 traffic.  Nginx does not spawn Plone process or anything like that, but Plone processes are externally controlled, usually by buildout-created ``bin/instance`` and ``bin/plonectl`` commands, or by a ``supervisor`` instance.
+
+## FOR BELOW: UPDATE TO BEST PRATICES AND THE PATH IS DIFFERENT IF YOU INSTALL THE LATEST NGINX FROM NGINX REPO
 
 Create file ``/etc/nginx/sites-available/yoursite.conf`` with contents::
 
@@ -101,6 +106,8 @@ More info:
 
 * http://wiki.mediatemple.net/w/%28ve%29:Configure_virtual_hosts_with_Nginx_on_Ubuntu
 
+
+## LINK BELOW IS ON WRON PLACE
 * http://www.starzel.de/blog/securing-plone-sites-with-https-and-nginx
 
 Content Security Policy (CSP) prevents a wide range of attacks, including cross-site scripting and other cross-site injections, but
@@ -124,6 +131,8 @@ To use HTTPS encryption you must first set up your server with SSL. This require
 
 * ensure Nginx includes SSL support
 
+## STATEMENT BELOW IS NOT UPTPDATE< YOU CAN ALSO SELGSIGN OR MENTION LETSENCRYPT
+
 * purchase or create SSL certificates and put them somewhere on your server
 
 * configure Nginx to use those SSL certificates
@@ -139,7 +148,11 @@ It uses two ``server`` blocks; the first listens for HTTP traffic and sends it t
 
 Some assumptions below:
 
+## EXPLAIN BELOW BETTER< THIS IS NOT ALWASY THE CASE< TELL ALSO ANOUT LETSENCRYPT
+
 * you have placed your SSL certificate files ``yoursite.com.crt`` and ``yoursite.com.key`` in the ``/etc/ssl/localcerts/`` directory
+
+## LINE BELOW IS TP COMPLICATED< EXPLAIN THAT BETTER WITH TWO EXAMPLES
 
 * you have set up a standalone Plone instance that is listening on port 8080 (as opposed to a multi-ZEO client install that would be listening on multiple ports and would require load balancing)
 
@@ -235,6 +248,8 @@ You can disable this behavior by adding a trailing ?::
 
 Matching incoming query string
 ------------------------------
+
+## NOTE USING IF ELSE IN NGINX IS CONSIDERT BAD, SINCE SOME TIME
 
 The ``location`` directive does not support query strings.  Use the ``if`` directive from the HTTP rewrite module.
 
@@ -391,6 +406,8 @@ This method is reliable as long as nginx can correctly extract IP address from t
 
 By using cookies
 ----------------
+
+## UPDATE PART ABOUT STICKY SESSIONS
 
 These instructions assume you are installing nginx via buildout.
 
