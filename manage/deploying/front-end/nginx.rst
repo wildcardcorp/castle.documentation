@@ -23,6 +23,8 @@ Minimal Nginx front end configuration for Plone on Ubuntu
 This is a minimal configuration to run Nginx on Ubuntu in front of a Plone site.
 
 ## ADD NOTE ABOUT INSTALLATION
+
+The suggest method to install Nginx is to use your OS package manager.
 You always should use your system package manager to install
 These instructions are *not* for configurations where one uses the buildout configuration tool to build a static Nginx server.
 
