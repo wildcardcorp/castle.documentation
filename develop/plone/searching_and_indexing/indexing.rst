@@ -12,13 +12,13 @@ Indexes and metadata
 What does indexing mean?
 ------------------------
 
-Indexing is the action to make object data search-able.
+Indexing is the action of making object data search-able.
 Plone stores available indexes in the database.
 You can create them through-the-web and inspect existing indexes
-in portal_catalog on Index tab.
+in portal_catalog on the Index tab.
 
 The Catalog Tool can be configured through the ZMI or
-programatically in Python but current best practice in the CMF
+programmatically in Python but current best practice in the CMF
 world is to use GenericSetup to configure it using the declarative
 *catalog.xml* file. The GenericSetup profile for Plone, for
 example, uses the *CMFPlone/profiles/default/catalog.xml* XML data
@@ -29,7 +29,7 @@ informative.
 When using a GenericSetup extension profile to customize the
 Catalog Tool in your portal, you only need to include XML for the
 pieces of the catalog you are changing. To add an index for the
-Archetypes location field, as in the example below, a policy
+Archetypes ``location`` field, as in the example below, a policy
 package could include the following
 *profiles/default/catalog.xml*:
 
@@ -58,16 +58,17 @@ include the following *profiles/default/catalog.xml*:
 
 .. admonition:: Warning
 
-      Care must be taken when setting up indexes with GenericSetup - if
+      If working with Plone earlier than 4.3.2, or GenericSetup < 1.7.4, 
+      care must be taken when setting up indexes with GenericSetup - if
       the import step for a *catalog.xml* is run a second time (for example
       when you reinstall the product), the indexes specified will be
       destroyed, losing all currently indexed entries, and then re-created
-      fresh (and empty!). If you want to workaround this behaviour, you can
+      fresh (and empty!). If you want to work around this behaviour, you can
       either update the catalog afterwards or add the indexes yourself in
       Python code using a custom import handler.
 
       For more info, see this setuphandler https://github.com/plone/plone.app.event/blob/master/plone/app/event/setuphandlers.py
-      in plone.app.event or these discussions on more about this problem:
+      in plone.app.event, or these discussions on more about this problem:
 
       * http://plone.293351.n2.nabble.com/How-to-import-catalog-xml-without-emptying-the-indexes-td2302709.html
 
@@ -80,7 +81,7 @@ Viewing indexes and indexed data
 Indexed data
 ^^^^^^^^^^^^
 
-You can do this through portal_catalog tool in ZMI.
+You can do this through the portal_catalog tool in the ZMI.
 
 * Click portal_catalog in the portal root
 
@@ -118,7 +119,7 @@ E.g. If your :doc:`Archetypes </develop/plone/content/types>` content type has a
 
         class MyContent(...):
 
-                # This is automatically run-time generated function accessor method,
+                # This is an automatically run-time generated function accessor method,
                 # but could be any hand-written method as well
                 # def getMyCustomValue(self):
                 #        pass
@@ -137,16 +138,16 @@ See more information about :doc:`accessor methods </develop/plone/content/archet
 Creating an index through the web
 ---------------------------------
 
-This method is suitable during development time - you can create an index
+This method is suitable during development - you can create an index
 to your Plone database locally.
 
-* Go ZMI
+* Go to the ZMI
 
 * Click portal_catalog
 
 * Click Indexes tab
 
-* On top right corner, you have a drop down menu to add new indexes. Choose the index type you need to add.
+* In the top right corner, you have a drop down menu to add new indexes. Choose the index type you need to add.
 
 	* Type: FieldIndex
 
@@ -154,11 +155,11 @@ to your Plone database locally.
 
 	* Indexed attributes: getMyCustomValue
 
-You can use Archetypes accessors methods directly as an indexed attribute.
-In example we use ``getMyCustomValue`` for AT field ``customValue``.
+You can use Archetypes accessor methods directly as an indexed attribute.
+In our example we use ``getMyCustomValue`` for AT field ``customValue``.
 
-The type of index you need depends on what kind queries you need to do on the data. E.g.
-direct value matching, ranged date queries, free text search, etc. need different kind of indexes.
+The type of index you need depends on what kind of queries you need to do on the data. E.g.
+direct value matching, ranged date queries, free text search, etc. need different kinds of indexes.
 
 * After this you can query portal_catalog::
 
@@ -167,7 +168,7 @@ direct value matching, ranged date queries, free text search, etc. need differen
                 print brain["getMyCustomValue"]
 
 
-Adding index using add-on product installer
+Adding an index using an add-on product installer
 -------------------------------------------
 
 You need to have your own add-on product which
@@ -176,30 +177,29 @@ This is the recommended method for repeated installations.
 
 You can create an index
 
-* Using catalog.xml where XML is written by hand
+* Using catalog.xml where the XML is written by hand
 
-* Create the index through the web and export catalog data from a development site
-  using *portal_setup* tool *Export* functionality. The index is created
-  through-the-web as above, XML is generated for you and you can fine tune the resulting XML
-  before dropping it in to your add-on product.
+* Create the index through the web and export the catalog data from a development site
+  using the *portal_setup* tool's *Export* functionality. The index is created
+  through-the-web as above, the XML is generated for you and you can fine tune the resulting XML
+  before dropping it into your add-on product.
 
-* Create indexes in Python code of add-on custom import step.
+* Create indexes in Python code of an add-on's custom import step.
 
-* As a prerequisitement, your add-on product must have
+* As a prerequisite, your add-on product must have
   :doc:`GenericSetup profile support </develop/addons/components/genericsetup>`.
 
-This way is repeatable: index gets created every time an add-on product is installed.
+This process is repeatable: an index gets created every time an add-on product is installed.
 It is more cumbersome, however.
 
 .. warning ::
 
-	There is a known issue of indexed data getting pruned
+	In older Plone versions (< 4.3.2)
+	there is a known issue of indexed data getting pruned
 	when an add-on product is reinstalled. If you want to avoid
-	this then you need to create new indexes in add-on
-	installer custom setup step (Python code).
+	this then you need to create new indexes in the custom setup step of your add-on's installer  (Python code).
 
 
-The example below is not safe for data prune on reinstall.
 This file is ``profiles/default/catalog.xml``
 It installs a new index called ``revisit_date``
 of DateIndex type.
@@ -220,7 +220,7 @@ For more information see
 Custom index methods
 --------------------
 
-The `plone.indexer <https://pypi.python.org/pypi/plone.indexer>`_ package provides method to create custom indexing functions.
+The `plone.indexer <https://pypi.python.org/pypi/plone.indexer>`_ package provides a method to create custom indexing functions.
 
 Sometimes you want to index "virtual" attributes of an object
 computed from existing ones, or just want to customize the way
@@ -255,6 +255,10 @@ ZCML. Assuming you've put the code above into a file named
 
 And that's all! Easy, wasn't it?
 
+Of course, everything discussed above on the different ways to create an index still applies:  
+now you have an index\ **er** to use in place of a field, but the Catalog needs to refer to it via an **index**.
+So don't forget to create an **index** for your index\ **er**\ !
+
 Note you can omit the ``for`` attribute because you passed this to
 the ``@indexer`` decorator, and you can omit the ``provides``
 attribute because the thing returned by the decorator is actually a
@@ -275,12 +279,12 @@ files, not with the deprecated Zope 2 ones into the
 Creating a metadata column
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The same rules and methods apply for metadata columns as creating index above.
+The same rules and methods apply for metadata columns as for creating indexes above.
 The difference with metadata is that
 
 * It is not used for searching, only displaying the search result
 
-* You store always a value copy as is
+* You always store a value copy as is
 
 To create metadata colums in your ``catalog.xml`` add::
 
@@ -296,9 +300,8 @@ To create metadata colums in your ``catalog.xml`` add::
 When indexing happens and how to reindex manually
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Content item reindexing is run when
-
-Plone calls reindexObject() if
+Content item reindexing is run when Plone calls reindexObject().  
+This happens if
 
 * The object is modified by the user using the standard edit forms
 
@@ -306,9 +309,9 @@ Plone calls reindexObject() if
 
 * If you add a new
   index you need to run :doc:`Rebuild catalog </develop/plone/searching_and_indexing/catalog>`
-  to get the existing values from content objects to new index.
+  to get the existing values from content objects to the new index.
 
-* You might also want to call :doc:`reindexObject()
+* You might also want to call the :doc:`reindexObject()
   </develop/plone/searching_and_indexing/catalog>` method  manually in some
   cases. This method is defined in the `ICatalogAware <http://svn.zope.org/Products.CMFCore/trunk/Products/CMFCore/interfaces/_content.py?rev=91414&view=auto>`_ interface.
 
@@ -326,7 +329,7 @@ You must call reindexObject() if you
     If you modify the object yourself you are responsible to notify related catalogs about the new object data.
 
 
-reindexObject() method takes the optional argument *idxs* which will list the changed indexes.
+The ``reindexObject()`` method takes the optional argument *idxs* which will list the changed indexes.
 If idxs is not given, all related indexes are updated even though they were not changed.
 
 Example::
@@ -335,7 +338,7 @@ Example::
 
     # Object.reindexObject() method is called to reflect the changed data in portal_catalog.
     # In our example, we change the title. The new title is not updated in the navigation,
-    # since the navigation tree and folder listing pulls object title from the catalog.
+    # since the navigation tree and folder listing pulls object titles from the catalog.
 
     object.reindexObject(idxs=["Title"])
 
@@ -345,14 +348,14 @@ Also, if you modify security related parameters (permissions), you need to call 
 Index types
 -----------
 
-Zope 2 product `PluginIndexes <https://github.com/zopefoundation/Products.ZCatalog/tree/master/src/Products/PluginIndexes>`_ defines various portal_catalog index types used by Plone.
+The Zope 2 product `PluginIndexes <https://github.com/zopefoundation/Products.ZCatalog/tree/master/src/Products/PluginIndexes>`_ defines various portal_catalog index types used by Plone.
 
 * FieldIndex stores values as is
 
 * DateIndex and DateRangeIndex store dates (Zope 2 DateTime objects) in searchable format. The latter
   provides ranged searches.
 
-* KeywordIndex allows keyword-style look-ups (query term is matched against all the values of a stored list)
+* KeywordIndex allows keyword-style look-ups (the query term is matched against all the values of a stored list)
 
 * ZCTextIndex is used for full text indexing
 
@@ -364,7 +367,7 @@ Default Plone indexes and metadata columns
 
 Some interesting indexes
 
-* start and end: Calendar event timestamps, used to make up calendar portlet
+* start and end: Calendar event timestamps, used to make up the calendar portlet
 
 * sortable_title: Title provided for sorting
 
@@ -374,15 +377,15 @@ Some interesting indexes
 
 * path: Where the object is (getPhysicalPath accessor method).
 
-* object_provides: What interfaces and marker interfaces object has. KeywordIndex of
+* object_provides: What interfaces and marker interfaces the object has. KeywordIndex of
   interface full names.
 
-* is_default_page: is_default_page is method in CMFPlone/CatalogTool.py handled by plone.indexer, so there is nothing
+* is_default_page: is_default_page is a method in CMFPlone/CatalogTool.py handled by plone.indexer, so there is nothing
   like object.is_default_page and this method calls ptool.isDefaultPage(obj)
 
 Some interesting columns
 
-* getRemoteURL: Where to go when the object is clicked
+* getRemoteURL: Where to go when the object is clicked.  Used by the Link content type.
 
 * getIcon: Which content type icon is used for this object in the navigation
 
@@ -391,7 +394,7 @@ Some interesting columns
 Custom sorting by title
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-sortable_title is type of FieldIndex (raw value) and normal ``Title`` index is type of searchable text.
+sortable_title has the type FieldIndex (raw value) and the normal ``Title`` index has the type SearchableText.
 
 ``sortable_title`` is generated from ``Title`` in ``Products/CMFPlone/CatalogTool.py``.
 
@@ -429,8 +432,8 @@ Related ``configure.zcml``
 Full-text searching
 --------------------
 
-Plone provides special index called ``SearchableText`` which is used on the site full-text search.
-Your content types can override ``SearchableText`` index with custom method to populate this index
+Plone provides a special index called ``SearchableText`` which is used on the site's full-text search.
+Your content types can override the ``SearchableText`` index with a custom method to populate this index
 with the text they want to go into full-text searching.
 
 Below is an example of having ``SearchableText`` on a custom Archetypes content class.
@@ -449,24 +452,24 @@ added to ``SearchableText``
         This method is called by portal_catalog to populate its SearchableText index.
         """
 
-        # Test this by enable pdb here and run catalog rebuild in ZMI
+        # Test this by enabling pdb here and run a catalog rebuild in the ZMI
         # xxx
 
         # Speed up string concatenation ops by using a buffer
         entries = []
 
-        # plain text fields we index from ourself,
+        # plain text fields we index by ourselves,
         # a list of accessor methods of the class
         plain_text_fields = ("Title", "Description")
 
-        # HTML fields we index from ourself
+        # HTML fields we index by ourselves
         # a list of accessor methods of the class
         html_fields = ("getSummary", "getBiography")
 
 
         def read(accessor):
             """
-            Call a class accessor method to give a value for certain Archetypes field.
+            Call a class accessor method to give a value for certain Archetypes fields.
             """
             try:
                 value = accessor()
