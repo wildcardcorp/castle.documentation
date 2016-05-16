@@ -12,7 +12,13 @@ Using external catalogs
 Implement IIndexingQueueProcessor
 ---------------------------------
 
-To hook into the catalog one can implement the IIndexingQueueProcessor interface.
+To hook into the catalog one can implement the IIndexingQueueProcessor `interface from Products.CMFCore <https://github.com/plone/Products.CMFCore/blob/master/Products/CMFCore/interfaces/_tools.py>`_.
+
+
+.. note:: For Plone < 5.1 you need to use the `interfaces from collective.indexing <https://github.com/plone/collective.indexing/blob/master/src/collective/indexing/interfaces.py>`_ package!
+
+
+
 
 .. code-block:: python
 
