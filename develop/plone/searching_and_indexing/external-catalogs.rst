@@ -4,7 +4,7 @@ Using external catalogs
 
 .. admonition:: Description
 
-        The Plone catalog can be extend to use external catalogs like Solr or elastic search. Add-ons like collective.solr use that to hook into the catalog API and do some Indexing outside of Plone in Solr, which increases performance and flexibility of indexing a lot.
+        The Plone catalog can be extend to use external catalogs like Solr or Elasticsearch. Add-ons like collective.solr use that to hook into the catalog API and do some Indexing outside of Plone in Solr, which increases performance and flexibility of indexing a lot.
 
 .. contents :: :local:
 
@@ -16,8 +16,6 @@ To hook into the catalog one can implement the IIndexingQueueProcessor `interfac
 
 
 .. note:: For Plone < 5.1 you need to use the `interfaces from collective.indexing <https://github.com/plone/collective.indexing/blob/master/src/collective/indexing/interfaces.py>`_ package!
-
-
 
 
 .. code-block:: python
