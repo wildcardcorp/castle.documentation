@@ -6,7 +6,7 @@ Creating a schema
 With the form package created and installed, we can create our form
 schema. Later in this manual, we will cover in more detail how you
 can perform to configure custom widgets, set up hidden fields and
-so onimperatively in Python code.
+so on imperatively in Python code.
 
 The example we’ll use for this form is a pizza ordering form. We’ll
 build on this form over the coming sections, so if you look at the
@@ -14,7 +14,7 @@ example source code, you may find a few extra bits. However, the basics
 are simple enough.
 
 We’ll create a module called *order.py* inside our package
-(*example/dexterityforms/order.py)*, and add the following code to it:
+(*example/form/browser/order.py)*, and add the following code to it:
 
 .. code-block:: py
 
@@ -61,15 +61,16 @@ We’ll create a module called *order.py* inside our package
             )
 
 
-For now, this form is quite simple. The list of pizzas is hard-coded,
-and we can only choose one of each type. We will make it (a little) more
-realistic later by adding a better vocabulary, creating a custom widget
-for the pizza order part, and improving the look and feel with a custom
-template.
+There are quite some characteristics of this form which could be improved.
+Which we actually will do on the following pages. The list of pizzas is
+hard-coded, and we can only choose one of each type. We will make it
+(a little) more realistic later by adding a better vocabulary, creating a
+custom widget for the pizza order part. We will also improve the look and feel
+with a custom template.
 
 At the top, we have included a number of imports. Some of these pertain
 to the form view, which will be described next. Other than that, we have
-simply defined a schema that describes the form’s fields. The *title*
+defined a schema that describes the form’s fields. The *title*
 and *description* of each field are used as label and help text, respectively.
 The *required* attribute can be set to *False* for optional fields.
 For a full field and widgets reference, see the

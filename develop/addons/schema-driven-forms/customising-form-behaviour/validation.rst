@@ -63,7 +63,7 @@ function:
     from Products.CMFCore.interfaces import ISiteRoot
     from Products.statusmessages.interfaces import IStatusMessage
 
-    from example.dexterityforms.interfaces import MessageFactory as _
+    from example.form import _
 
     def postcodeConstraint(value):
         """Check that the postcode starts with a 6
@@ -128,7 +128,6 @@ For example:
 
 ::
 
-    from plone.directives import form
     from example.dexterityforms.interfaces import MessageFactory as _
     from plone.supermodel import model
     from z3c.form import validator
@@ -139,7 +138,6 @@ For example:
     ...
 
 
-    @form.validator.validator(field=IPizzaOrder['phone_number'])
     class IPizzaOrder(model.Schema):
 
         phone_number = schema.TextLine(
