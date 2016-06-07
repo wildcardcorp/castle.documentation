@@ -1,7 +1,7 @@
 Preparing Images for the Web
 ==================================
 
-Preparing images for the web is an essential part of using images in Plone, or in any online context.
+Preparing images for the web is an essential part of using images in Castle or in any online context.
 As you will see, size matters.
 
 Many people source photographs taken with a digital camera, but they can also be scanned images, graphical illustrations made with software, and other specialized images.
@@ -22,7 +22,7 @@ For a scanned map image, perhaps the image width would need to be 1000 pixels fo
 
 After saving your resized image, give it a name that indicates the new size (e.g., butteryfly-resized-300px.jpg).
 The file format is most commonly .jpg (or .jpeg). Other common formats for images include .png and .gif.
-Take note of where you save images on your computer so that you can find them when you upload them to your Plone web site.
+Take note of where you save images on your computer so that you can find them when you upload them to your Castle web site.
 
 .. figure:: /_static/image_resizing.png
    :align: center
@@ -32,8 +32,8 @@ Take note of where you save images on your computer so that you can find them wh
 
 **To summarize**:
 
-#. Take your photograph with your camera, or find an existing image you want to use
-#. Transfer it to your computer
-#. Use image software on your computer to resize your photograph
-#. Upload it to your Plone website
+#. Take your photograph with your camera, or find an existing image you want to use.
+#. Transfer it to your computer.
+#. Use image software on your computer to resize your photograph.
+#. Upload it to your Castle website.
 
