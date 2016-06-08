@@ -6,7 +6,7 @@ Adding Links
 In addition to links embedding within pages, Links can be created as discrete content items.
 Having links as discrete items lets you do things like organizing them in folders, setting keywords on them to facilitate grouping in lists and search results, or include them in navigation.
 
-Add a link by clicking the menu choice in the *Add new...* menu:
+Add a link by clicking the menu choice in the **Add...** menu:
 
 .. code:: robotframework
    :class: hidden
@@ -56,11 +56,13 @@ You will see the Add*Link* panel:
 .. figure:: ../../_robot/adding-links_add-form.png
    :align: center
    :alt: Adding links form
+   
+
+Fill in the **Title** field and Castle will fill in the ID and Url field based on the title you entered.  This screen also shows the state of the page, whether it is published, unpublished, or pending approval for publication. Click the **Create and Edit** button.  You will then see your page ready to be edited.
 
 Good titles for links are important, because the titles will show up in lists of links, and because there tend to be large numbers links held in a folder or collection.
 
-Paste the web address in the URL field or type it in.
-There is no preview feature here, so it is best to paste the web address from a browser window where you are viewing the target for the link to be sure you have the address correct.
+
 
 The Link Object in Use
 ----------------------

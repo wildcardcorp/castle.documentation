@@ -2,7 +2,7 @@
 Adding Content
 ====================
 
-How to add basic content types to Plone web sites
+How to add basic content types to Castle web sites
 
 .. toctree::
     :maxdepth: 2
