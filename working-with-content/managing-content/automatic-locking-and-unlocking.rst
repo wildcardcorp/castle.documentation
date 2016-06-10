@@ -1,7 +1,7 @@
 Automatic Locking and Unlocking
 ====================================
 
-Plone gives you a locking message that will tell you that a document was locked, by whom, and how long ago - so you won't accidentally stomp on somebody else's changes.
+Castle gives you a locking message that will tell you that a document was locked, by whom, and how long ago - so you won't accidentally stomp on somebody else's changes.
 
 When somebody clicks on the Edit tab, that item immediately becomes locked.
 This feature prevents two people from editing the same document at the same time, or accidentally saving edits over another users edits.
