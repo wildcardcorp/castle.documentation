@@ -1,12 +1,13 @@
 Adding Links
 ============
 
-.. include:: ../../_robot.rst
 
 In addition to links embedding within pages, Links can be created as discrete content items.
 Having links as discrete items lets you do things like organizing them in folders, setting keywords on them to facilitate grouping in lists and search results, or include them in navigation.
 
 Add a link by clicking the menu choice in the **Add...** menu:
+
+..image:: Add.png
 
 .. code:: robotframework
    :class: hidden
@@ -36,6 +37,8 @@ Add a link by clicking the menu choice in the **Add...** menu:
    :alt: add-new-menu.png
 
 You will see the Add*Link* panel:
+
+..image:: AddLink.png
 
 .. code:: robotframework
    :class: hidden

@@ -1,12 +1,13 @@
 Setting Basic Properties
 ========================
 
-.. include:: ../../_robot.rst
 
 The tab panels available on each content item has fields for basic information.
-The more data you can provide, the better Plone can help in making the content available to the relevant visitors.
+The more data you can provide, the better Castle can help in making the content available to the relevant visitors.
 
 Any content item, when clicked by a user with edit rights for the item, will show a set of tabs at the top for setting basic properties:
+
+..image:: SettingsPanel.png
 
 
 
@@ -43,17 +44,21 @@ Any content item, when clicked by a user with edit rights for the item, will sho
 These basic properties tabs are:
 
 -  *Default* - shows the main data entry panel for the content item
--  *Settings* - shows a small panel for setting whether or not the item will appear in navigation menus and if comments are allowed on the item
 -  *Categorization* - shows a panel for creating and setting tags (keywords) for the item
 -  *Dates* - shows the publishing date and expiration date for the item
--  *Ownership* - shows a panel for setting creators, contributors, and any copyright information for the item
+-  *Ownership* - shows a panel for setting creators, contributors, and any copyright information for the    item
+-  *Layout* - shows a panel for choosing what layout will apply to this item
+-  *Settings* - shows a small panel for setting whether or not the item will appear in navigation menus    and if comments are allowed on the item
+
 
 
 The input fields under these tabs cover basic descriptive information called **metadata**.
 Metadata is sometimes called "data about data."
-Plone can use this metadata in a multitude of ways.
+Castle can use this metadata in a multitude of ways.
 
 Here is the *Categorization* panel, shown for a page content item (would be the same for other content types):
+
+..image:: categorization.png
 
 .. code:: robotframework
    :class: hidden
@@ -74,17 +79,14 @@ Here is the *Categorization* panel, shown for a page content item (would be the 
 The main input field for the panel is for specifying *Tags*, sometimes also known as *Categories*
 
 Create them, just by typing in words or phrases.
-Plone will automatically search for existing tags while you type, so you can select already existing tags.
+Castle will automatically search for existing tags while you type, so you can select already existing tags.
 If you want to create a new tag, just hit "enter" after your word (or phrase).
-
-The *Related Items* field lets you set links between content items, which will show as links at the bottom, when a content item is viewed.
-This is useful when you don't want to use explicit tags to connect content.
 
 The *Location* field is a geographic location, suitable for use with mapping systems, but appropriate to enter, for general record keeping. Note that this field may not always be present, this is a setting that your site administrator has to enable.
 
-The *Language* choice normally would default to the site setting, but on multilingual web sites, different languages could be used in a mix of content.
-
 The *Dates* panel has fields for the publishing date and the expiration date, effectively start and stop dates for the content if you wish to set them:
+
+..image:: Dates.png
 
 .. code:: robotframework
    :class: hidden
@@ -133,6 +135,8 @@ The publication and expiration dates work like this:
 The *Ownership* panel has three free-form fields for listing creators,
 contributors, and information about copyright or ownership rights to the
 content:
+
+..image:: Ownership.png
 
 .. code:: robotframework
    :class: hidden

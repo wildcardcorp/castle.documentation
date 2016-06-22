@@ -2,12 +2,12 @@ Adding New Content
 ==================
 
 
-.. include:: ../../_robot.rst
-
 
 A general overview of how to add new content items in Castle, including definitions of each standard content type.
 
 New content items are added via the **Add . . .** pop up menu:
+
+..image:: Add.png
 
 .. code:: robotframework
    :class: hidden

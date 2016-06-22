@@ -1,12 +1,13 @@
 Adding Pages
 ============
 
-.. include:: ../../_robot.rst
 
 Pages in Castle vary greatly, but all are single "web pages," of one sort or
 another.
 
 To add a page, use the **Add...** menu for a folder:
+
+..image:: Add.png
 
 .. code:: robotframework
    :class: hidden
@@ -36,6 +37,8 @@ To add a page, use the **Add...** menu for a folder:
    :alt: add-new-menu.png
 
 Select **Page** from the menu, and you'll see the *Add Page* screen:
+
+..image:: AddPage.png
 
 .. code:: robotframework
    :class: hidden

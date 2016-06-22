@@ -1,7 +1,6 @@
 Adding Events
 =============
 
-.. include:: ../../_robot.rst
 
 Plone web sites have a built-in system for managing and showing calendar events.
 

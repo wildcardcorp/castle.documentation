@@ -1,14 +1,16 @@
 ========================
 Setting Your Preferences
 ========================
+..image:: userprefs.png
 
 .. include:: ../../_robot.rst
 
-After logging in to a Plone web site, you can change your personal preferences for information about your identity and choice of web site settings.
+After logging in to a Castle web site, you can change your personal preferences for information about your identity and choice of web site settings.
 
-After logging in, your full name will show on the :term:`toolbar`.
+After logging in, your full name will show in the upper right corner of the page.
 
 Click on your name to open the sub-menu, then click on the *Preferences* link to go to your personal area:
+
 
 
 .. code:: robotframework
@@ -59,8 +61,8 @@ Click on your name to open the sub-menu, then click on the *Preferences* link to
 
 Date entry fields include:
 
--  *Wysiwyg editor* - Plone comes standard with :term:`TinyMCE`, an easy to use graphical editor to edit texts, link to other content items and so forth. Your site administrator might have installed alternatives, though.
--  *Language* - On multilingual sites, you can select the language that you create content in most often. Plone excels at offering multilingual support.
+-  *Wysiwyg editor* - Castle comes standard with :term:`TinyMCE`, an easy to use graphical editor to edit   texts, link to other content items and so forth. Your site administrator might have installed alternatives though.       
+-  *Language* - On multilingual sites, you can select the language that you create content in most often. 
 -  *Time zone* - If you work in a different timezone than the server default, you can select it here.
 
 
@@ -69,6 +71,7 @@ Personal information
 
 Now let's switch over to the "Personal Information" tab:
 
+..image:: personalinfo.png
 
 .. code:: robotframework
    :class: hidden
@@ -107,7 +110,9 @@ The last tab allows you to change your password.
 
 .. note::
 
-   Plone is used by a variety of organisations. Some of these have centralized policies on where you can change your password, because this might also involve your access to other computer resources. In those cases, this screen might have been disabled.
+   Castle is used by a variety of organisations. Some of these have centralized policies on where you canchange your password, because this might also involve your access to other computer resources. In those cases, this screen might have been disabled.
+
+..image:: changepw.png
 
 .. code:: robotframework
    :class: hidden

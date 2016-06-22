@@ -1,11 +1,12 @@
 Adding News Items
 ======================
 
-.. include:: ../../_robot.rst
 
 Castle web sites have a built-in system for publishing news items.
 
 Use the **Add...** menu for a folder to add a news item:
+
+..image:: Add.png
 
 .. code:: robotframework
    :class: hidden
@@ -35,6 +36,8 @@ Use the **Add...** menu for a folder to add a news item:
    :alt: add-new-news-item-menu.png
 
 You will see the *Add News Item* panel:
+
+..image:: AddNews.png
 
 .. code:: robotframework
    :class: hidden

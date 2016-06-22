@@ -1,7 +1,6 @@
 Adding Folders
 ==============
 
-.. include:: ../../_robot.rst
 
 Adding folders to a Castle web site is the basic way of controlling the organization of content.
 
