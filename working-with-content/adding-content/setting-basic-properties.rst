@@ -159,7 +159,7 @@ content type, but generally there are input fields controlling whether
 or not the item appears in navigation, or if there are comments allowed,
 and other similar controls:
 
-
+..image:: Settings.png
 
 .. code:: robotframework
    :class: hidden
@@ -196,13 +196,13 @@ You don't always need fields such as publishing and expiration dates, language, 
 A content management system can only be as good as the data completeness allows.
 
 Specifying tags requires attention, but if you are able to get in the habit, and are committed to creating a meaningful set of tags, there is a big return on the investment.
-The return happens through the use of searching and other facilities in Plone that work off the categorization.
+The return happens through the use of searching and other facilities in Castle that work off the categorization.
 The same holds for setting related items. You'll be able to put your finger on what you need, and you may be able to discover and use relationships within the content.
 
 Exposing Metadata Properties as meta tags in the HTML source
 ------------------------------------------------------------
 
-From Plone 4 on, in *Site Setup*, there is a check box that will expose the :term:`Dublin Core` metadata properties.
+In *Site Setup*, there is a check box that will expose the :term:`Dublin Core` metadata properties.
 Checking this box will expose the title, description, etc. metadata as meta tags within the
 HTML ``<head>``.
 For example:
