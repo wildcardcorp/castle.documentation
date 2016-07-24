@@ -1,4 +1,4 @@
-.. _rst_prev-next-links:
+
 
 Next/Previous Navigation
 ========================
