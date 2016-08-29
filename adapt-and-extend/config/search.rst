@@ -1,10 +1,10 @@
-Search settings
+Search settings 
 ===============
 
 
-.. include:: ../../_robot.rst
+.. image:: search.png
 
-.. code:: robotframework
+.. .. code:: robotframework
    :class: hidden
 
    *** Test Cases ***
@@ -15,7 +15,7 @@ Search settings
        ...  ${CURDIR}/../../_robot/search-setup.png
        ...  css=#content
 
-.. figure:: ../../_robot/search-setup.png
+.. .. figure:: ../../_robot/search-setup.png
    :align: center
    :alt: Search configuration
 

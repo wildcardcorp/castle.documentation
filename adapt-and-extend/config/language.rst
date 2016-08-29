@@ -1,10 +1,10 @@
-Language settings
+Language settings 
 =================
 
 
-.. include:: ../../_robot.rst
+.. image:: Language.png
 
-.. code:: robotframework
+.. .. code:: robotframework
    :class: hidden
 
    *** Test Cases ***
@@ -21,7 +21,7 @@ Language settings
        ...  css=#content
 
 
-.. figure:: ../../_robot/language-setup.png
+.. .. figure:: ../../_robot/language-setup.png
    :align: center
    :alt: Language setup configuration
 
@@ -29,14 +29,16 @@ You can set up the default language for your site and the other languages it sho
 
 .. note::
 
-   This is for the language of the *user interface* of Plone.
+   This is for the language of the *user interface* of Castle.
    It will **not** make the content you create be translatable.
    For that, you should enable the add-on "plone.app.multilingual" which is available in the :doc:`add-on section <add-ons>`
 
 
 Should you have multiple languages, and plone.app.multilingual, enabled, you can set various options in the *Negotiation* tab:
 
-.. figure:: ../../_robot/language-negotiation.png
+.. image:: language2.png
+
+.. .. figure:: ../../_robot/language-negotiation.png
    :align: center
    :alt: Language negotiation configuration
 
@@ -44,4 +46,3 @@ Should you have multiple languages, and plone.app.multilingual, enabled, you can
 
     These are important choices, which are hard to change after you have made them, so think about them carefully when setting up multilingual sites.
 
-The Plone community has much experience with multilingual sites, so do not hesitate to ask for advice on one of the support channels, see "Further help resources" in the footer of this website.

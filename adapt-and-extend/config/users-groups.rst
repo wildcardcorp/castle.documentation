@@ -1,9 +1,9 @@
 Managing Users and Groups
 =========================
 
-.. include:: ../../_robot.rst
+.. image:: users.png
 
-.. code:: robotframework
+.. .. code:: robotframework
    :class: hidden
 
    *** Test Cases ***
@@ -46,7 +46,9 @@ When you search for an existing user you can edit their properties (if you have 
 Group setup
 -----------
 
-.. figure:: ../../_robot/groups-setup.png
+.. image:: groups.png
+
+.. .. figure:: ../../_robot/groups-setup.png
    :align: center
    :alt: Groups setup configuration
 
@@ -60,7 +62,9 @@ Settings for many users/groups
 
 These options will simply optimize the presentation of users and groups according to the size of your website. If you have thousands or hundreds of thousands of users, you don't want to see them in a list. You will be presented with a searchbox instead.
 
-.. figure:: ../../_robot/users-settings.png
+.. image:: groupsettings.png
+
+.. .. figure:: ../../_robot/users-settings.png
    :align: center
    :alt: usersettings setup configuration
 
@@ -77,7 +81,8 @@ Examples could be
 - Twitter handle
 - whatever else you can think of, or your organisation requires!
 
+.. image:: editmembers.png
 
-.. figure:: ../../_robot/users-fields.png
+.. .. figure:: ../../_robot/users-fields.png
    :align: center
    :alt: Member field setup configuration

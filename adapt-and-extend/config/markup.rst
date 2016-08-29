@@ -1,9 +1,9 @@
 Markup
-======
+====== 
 
-.. include:: ../../_robot.rst
+.. image:: markup.png
 
-.. code:: robotframework
+.. .. code:: robotframework
    :class: hidden
 
    *** Test Cases ***
@@ -14,10 +14,10 @@ Markup
        ...  ${CURDIR}/../../_robot/markup-setup.png
        ...  css=#content
 
-.. figure:: ../../_robot/markup-setup.png
+.. .. figure:: ../../_robot/markup-setup.png
    :align: center
    :alt: Markup setup configuration
 
 So-called "Markup" languages like `Markdown <https://en.wikipedia.org/wiki/Markdown>`_ and `RestructuredText <https://en.wikipedia.org/wiki/ReStructuredText>`_ are popular with some users, since they can be written using just a keyboard without a mouse or pointing device.
 
-Plone allows these markup languages to be used as text input alternatives, if you so desire.
+Castle allows these markup languages to be used as text input alternatives, if you so desire.

@@ -1,9 +1,9 @@
-Syndication settings
+Syndication settings 
 ====================
 
-.. include:: ../../_robot.rst
+.. image:: syndication.png
 
-.. code:: robotframework
+.. .. code:: robotframework
    :class: hidden
 
    *** Test Cases ***
@@ -14,7 +14,7 @@ Syndication settings
        ...  ${CURDIR}/../../_robot/syndication-setup.png
        ...  css=#content
 
-.. figure:: ../../_robot/syndication-setup.png
+.. .. figure:: ../../_robot/syndication-setup.png
    :align: center
    :alt: Syndication setup configuration
 
@@ -22,4 +22,4 @@ These settings will allow you to enable syndication of your content via various 
 
 By default, the well-supported RSS (versions 1 and 2), Atom and iTunes formats are supported.
 
-You can enable these settings side-wide, or just for a specific Folder or Collection, for instance one that you create with the latest News items, press releases, or blog posts.
+You can enable these settings side-wide, or just for a specific Folder. For instance one that you create with the latest News items, press releases, or blog posts.

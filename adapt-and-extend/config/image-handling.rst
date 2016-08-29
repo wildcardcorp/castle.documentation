@@ -1,9 +1,9 @@
 Image handling
-==============
+============== 
 
-.. include:: ../../_robot.rst
+.. image:: ImageHandling.png
 
-.. code:: robotframework
+.. .. code:: robotframework
    :class: hidden
 
    *** Test Cases ***
@@ -14,7 +14,7 @@ Image handling
        ...  ${CURDIR}/../../_robot/imaging-setup.png
        ...  css=#content
 
-.. figure:: ../../_robot/imaging-setup.png
+.. .. figure:: ../../_robot/imaging-setup.png
    :align: center
    :alt: Imaging setup configuration
 

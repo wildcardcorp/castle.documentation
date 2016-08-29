@@ -1,10 +1,9 @@
 Error log
-=========
+========= 
 
+..image:: Error.png
 
-.. include:: ../../_robot.rst
-
-.. code:: robotframework
+.. .. code:: robotframework
    :class: hidden
 
    *** Test Cases ***
@@ -15,7 +14,7 @@ Error log
        ...  ${CURDIR}/../../_robot/errorlog-setup.png
        ...  css=#content
 
-.. figure:: ../../_robot/errorlog-setup.png
+.. .. figure:: ../../_robot/errorlog-setup.png
    :align: center
    :alt: Error log setup configuration
 

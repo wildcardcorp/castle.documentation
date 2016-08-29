@@ -1,9 +1,9 @@
-Mail Configuration
+Mail Configuration 
 ==================
 
-.. include:: ../../_robot.rst
+.. image:: Mail.png
 
-.. code:: robotframework
+.. .. code:: robotframework
    :class: hidden
 
    *** Test Cases ***
@@ -14,18 +14,18 @@ Mail Configuration
        ...  ${CURDIR}/../../_robot/mail-setup.png
        ...  css=#content
 
-.. figure:: ../../_robot/mail-setup.png
+.. .. figure:: ../../_robot/mail-setup.png
    :align: center
    :alt: Mail setup configuration
 
 
-Completing this configuration allows your Plone site to send email.
+Completing this configuration allows your Castle site to send email.
 If the mail settings are not configured properly, you will not be able to receive form submissions via email from your site, and users can't be contacted for an email reset link.
 
 Using localhost for email
 -------------------------
 
-One common way to configure mail for your Plone site is to use a mail server on the same machine that is hosting Plone.
+One common way to configure mail for your Castle site is to use a mail server on the same machine that is hosting Castle.
 To do this, you'll first need to configure a mail server, like `Postfix <http://www.postfix.org/BASIC_CONFIGURATION_README.html>`_.
 
 | **SMTP Server:** localhost
@@ -54,4 +54,4 @@ Testing the Configuration
 -------------------------
 
 You can test the configuration by clicking the "Save and send test e-mail" button at the bottom of the form.
-You should receive an email from the email address you specified with the subject "Test email from Plone."
+You should receive an email from the email address you specified with the subject "Test email from Castle."
