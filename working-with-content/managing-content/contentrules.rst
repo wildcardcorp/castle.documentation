@@ -1,6 +1,6 @@
 ===================
 Using Content Rules
-===================
+=================== 
 
 This tutorial discusses what content rules are and how to configure and use them.
 

@@ -1,5 +1,5 @@
 Preparing Images for the Web
-==================================
+================================== 
 
 Preparing images for the web is an essential part of using images in Castle or in any online context.
 As you will see, size matters.
