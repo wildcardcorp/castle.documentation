@@ -11,10 +11,10 @@ In Castle folders are essentially used the same way, except that they are create
 Folders are added by clicking the **Add...** popup menu.
 Select **Folder** from the menu:
 
-..image:: AddPopup.png
+.. image:: AddPopup.png
 
-.. code:: robotframework
-   :class: hidden
+.. .. code:: robotframework
+      :class: hidden
 
    *** Test Cases ***
 
@@ -36,16 +36,16 @@ Select **Folder** from the menu:
        ...  css=div.plone-toolbar-container
        ...  css=#plone-contentmenu-factories ul
 
-.. figure:: ../../_robot/adding-folders_add-menu.png
-   :align: center
-   :alt: add-new-menu.png
+.. .. figure:: ../../_robot/adding-folders_add-menu.png
+      :align: center
+      :alt: add-new-menu.png
 
 You should now see the *Add Folder* screen:
 
-..image:: AddFolder.png
+.. image:: AddFolder.png
 
-.. code:: robotframework
-   :class: hidden
+.. .. code:: robotframework
+      :class: hidden
 
    *** Test Cases ***
 
@@ -60,9 +60,9 @@ You should now see the *Add Folder* screen:
        ...  ${CURDIR}/../../_robot/adding-folders_add-form.png
        ...  css=#content
 
-.. figure:: ../../_robot/adding-folders_add-form.png
-   :align: center
-   :alt:
+.. .. figure:: ../../_robot/adding-folders_add-form.png
+      :align: center
+      :alt:
 
    
 Fill in the **Title** field and Castle will fill in the ID and Url field.  This screen also shows the state of the page, whether it is published, unpublished, or pending approval for publication. Click the **Create and Edit** button.  You will then see your page ready to be edited.

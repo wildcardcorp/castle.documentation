@@ -7,10 +7,10 @@ Having links as discrete items lets you do things like organizing them in folder
 
 Add a link by clicking the menu choice in the **Add...** menu:
 
-..image:: Add.png
+.. image:: Add.png
 
-.. code:: robotframework
-   :class: hidden
+.. .. code:: robotframework
+      :class: hidden
 
    *** Test Cases ***
 
@@ -32,16 +32,16 @@ Add a link by clicking the menu choice in the **Add...** menu:
        ...  css=div.plone-toolbar-container
        ...  css=#plone-contentmenu-factories ul
 
-.. figure:: ../../_robot/adding-links_add-menu.png
-   :align: center
-   :alt: add-new-menu.png
+.. .. figure:: ../../_robot/adding-links_add-menu.png
+      :align: center
+      :alt: add-new-menu.png
 
 You will see the Add*Link* panel:
 
-..image:: AddLink.png
+.. image:: AddLink.png
 
-.. code:: robotframework
-   :class: hidden
+.. .. code:: robotframework
+      :class: hidden
 
    *** Test Cases ***
 
@@ -56,9 +56,9 @@ You will see the Add*Link* panel:
        ...  ${CURDIR}/../../_robot/adding-links_add-form.png
        ...  css=#content
 
-.. figure:: ../../_robot/adding-links_add-form.png
-   :align: center
-   :alt: Adding links form
+.. .. figure:: ../../_robot/adding-links_add-form.png
+      :align: center
+      :alt: Adding links form
    
 
 Fill in the **Title** field and Castle will fill in the ID and Url field based on the title you entered.  This screen also shows the state of the page, whether it is published, unpublished, or pending approval for publication. Click the **Create and Edit** button.  You will then see your page ready to be edited.

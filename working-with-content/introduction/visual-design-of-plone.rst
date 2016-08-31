@@ -7,11 +7,9 @@ Here's an overview of the Castle layout, and some design examples.
 What does a Castle web site look like?
 The default design looks generally like this:
 
-//same image as Plone docs
-
-.. figure:: /_static/Castle-default-design-areas.png
+.. figure:: /_static/Plone-default-design-areas.png
    :align: center
-   :alt: Castle default design areas
+   :alt: Plone default design areas
 
 The Castle web site you use could have a design radically different from this, but you should be able to find common elements, such as the log in link and a navigation panel or menu.
 In the default design, the navigation menu is in the left area, and usually appears as an indented list of folders in the site.
@@ -26,16 +24,14 @@ All of these aspects can be strictly separated in Castle, and can be adjusted in
 
 We'll use the default Castle layout design as an example of typical divisions of the screen:
 
-//can use similar image with Castle logo
-
-.. figure:: /_static/Castledefaultareaslabeled.png
+.. figure:: /_static/plonedefaultareaslabeled.png
    :align: center
    :alt:
 
 You may need to adapt these terms as needed for your Castle web site design.
 You may encounter varied terms for describing screen real estate, such as right and left "slots," for the left and right column areas, "portlet," or "viewlet," for discrete areas or boxes, and several other terms.
 
-// For example, we can look at a web site from the `list of Castle success stories <https://Castle.com/success-stories>`_ to compare:
+.. For example, we can look at a web site from the `list of Castle success stories <https://Castle.com/success-stories>`_ to compare:
 
 .. figure:: /_static/victoria.png
    :align: center

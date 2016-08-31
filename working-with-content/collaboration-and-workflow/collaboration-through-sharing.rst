@@ -6,7 +6,43 @@ The Sharing item on the Toolbar empowers you to collaborate with other users thr
 
 Here a user has created a Folder called "Welcome to Castle" and has clicked on the "Sharing" option.
 
-..image:: sharing.png
+.. image:: sharing.png
+
+.. .. code:: robotframework
+      :class: hidden
+ 
+   *** Test Cases ***
+
+   Create sample content
+       Go to  ${PLONE_URL}
+
+       ${item} =  Create content  type=Folder
+       ...  id=documentation  title=Documentation
+       ...  description=Here you can find the documentation on our new product
+
+   Show sharing menu
+
+       Go to  ${PLONE_URL}/documentation
+
+       Click link  css=#contentview-local_roles a
+
+       Wait until element is visible
+       ...  css=#user-group-sharing-container
+
+       Update element style  portal-footer  display  none
+
+
+      Capture and crop page screenshot
+       ...  ${CURDIR}/../../_robot/sharing-menu.png
+               ...  css=#content-header
+               ...  css=div.plone-toolbar-container
+
+
+.. .. figure:: ../../_robot/sharing-menu.png
+      :align: center
+      :alt: basic workflow menu
+
+
 
 The default workflow for this Castle site has not been modified, so the folder is still "Private". Only she can see the contents.
 

@@ -7,12 +7,10 @@ The more data you can provide, the better Castle can help in making the content 
 
 Any content item, when clicked by a user with edit rights for the item, will show a set of tabs at the top for setting basic properties:
 
-..image:: SettingsPanel.png
+.. image:: SettingsPanel.png
 
-
-
-.. code:: robotframework
-   :class: hidden
+.. .. code:: robotframework
+      :class: hidden
 
    *** Test Cases ***
 
@@ -37,9 +35,9 @@ Any content item, when clicked by a user with edit rights for the item, will sho
        ...  ${CURDIR}/../../_robot/basicpropertiestabs.png
        ...  css=nav.autotoc-nav
 
-.. figure:: ../../_robot/basicpropertiestabs.png
-   :align: center
-   :alt: basicpropertiestabs.png
+.. .. figure:: ../../_robot/basicpropertiestabs.png
+      :align: center
+      :alt: basicpropertiestabs.png
 
 These basic properties tabs are:
 
@@ -58,10 +56,10 @@ Castle can use this metadata in a multitude of ways.
 
 Here is the *Categorization* panel, shown for a page content item (would be the same for other content types):
 
-..image:: categorization.png
+.. image:: categorization.png
 
-.. code:: robotframework
-   :class: hidden
+.. .. code:: robotframework
+      :class: hidden
 
    *** Test Cases ***
 
@@ -72,9 +70,9 @@ Here is the *Categorization* panel, shown for a page content item (would be the 
        ...  ${CURDIR}/../../_robot/editpagecategorization.png
        ...  css=#content-core
 
-.. figure:: ../../_robot/editpagecategorization.png
-   :align: center
-   :alt: Edit page categorization
+.. .. figure:: ../../_robot/editpagecategorization.png
+      :align: center
+      :alt: Edit page categorization
 
 The main input field for the panel is for specifying *Tags*, sometimes also known as *Categories*
 
@@ -86,10 +84,10 @@ The *Location* field is a geographic location, suitable for use with mapping sys
 
 The *Dates* panel has fields for the publishing date and the expiration date, effectively start and stop dates for the content if you wish to set them:
 
-..image:: Dates.png
+.. image:: Dates.png
 
-.. code:: robotframework
-   :class: hidden
+.. .. code:: robotframework
+      :class: hidden
 
    *** Test Cases ***
 
@@ -100,9 +98,9 @@ The *Dates* panel has fields for the publishing date and the expiration date, ef
        ...  ${CURDIR}/../../_robot/datessettings.png
        ...  css=#content-core
 
-.. figure:: ../../_robot/datessettings.png
-   :align: center
-   :alt: Dates Settings
+.. .. figure:: ../../_robot/datessettings.png
+      :align: center
+      :alt: Dates Settings
 
 
 The publication and expiration dates work like this:
@@ -136,10 +134,10 @@ The *Ownership* panel has three free-form fields for listing creators,
 contributors, and information about copyright or ownership rights to the
 content:
 
-..image:: Ownership.png
+.. image:: Ownership.png
 
-.. code:: robotframework
-   :class: hidden
+.. .. code:: robotframework
+      :class: hidden
 
    *** Test Cases ***
 
@@ -150,19 +148,19 @@ content:
        ...  ${CURDIR}/../../_robot/ownershippanel.png
        ...  css=#content-core
 
-.. figure:: ../../_robot/ownershippanel.png
-   :align: center
-   :alt: Ownership Panel
+.. .. figure:: ../../_robot/ownershippanel.png
+      :align: center
+      :alt: Ownership Panel
 
 The *Settings* panel has fields that may vary a bit from content type to
 content type, but generally there are input fields controlling whether
 or not the item appears in navigation, or if there are comments allowed,
 and other similar controls:
 
-..image:: Settings.png
+.. image:: Settings.png
 
-.. code:: robotframework
-   :class: hidden
+.. .. code:: robotframework
+      :class: hidden
 
    *** Test Cases ***
 
@@ -173,9 +171,9 @@ and other similar controls:
        ...  ${CURDIR}/../../_robot/settingspanel.png
        ...  css=#content-core
 
-.. figure:: ../../_robot/settingspanel.png
-   :align: center
-   :alt: Settings panel
+.. .. figure:: ../../_robot/settingspanel.png
+      :align: center
+      :alt: Settings panel
 
 You can allow users to edit the "Short name" of content items.
 

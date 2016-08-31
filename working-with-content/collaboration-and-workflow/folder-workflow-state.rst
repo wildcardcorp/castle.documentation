@@ -1,5 +1,5 @@
 =================================================
-How a folder's workflow state affects its content
+How a folder's workflow state affects its content 
 =================================================
 
 .. admonition:: Description

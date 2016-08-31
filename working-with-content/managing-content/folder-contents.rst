@@ -8,7 +8,66 @@ cut, paste, move, reorder, etc.
 
 The Manage Content tab for folders is like "File Manager" or "My Computer" system utilities in Windows and Linux desktops and the "Finder" in Mac OS X, with similar functionality.
 
-..image:: ManageContent.png
+.. image:: ManageContent.png
+
+.. .. code:: robotframework
+      :class: hidden
+
+   *** Test Cases ***
+
+   Edit folder
+       Go to  ${PLONE_URL}
+       Click element  css=#contentview-folderContents a
+       Capture and crop page screenshot
+       ...  ${CURDIR}/../../_robot/foldercontents.png
+       ...  css=#content
+       Capture and crop page screenshot
+       ...  ${CURDIR}/../../_robot/foldercontents-columns.png
+       ...  css=#btn-attribute-columns
+       Capture and crop page screenshot
+       ...  ${CURDIR}/../../_robot/foldercontents-selected.png
+       ...  css=#btn-selected-items
+       Capture and crop page screenshot
+       ...  ${CURDIR}/../../_robot/foldercontents-rearrange.png
+       ...  css=#btn-rearrange
+       Capture and crop page screenshot
+       ...  ${CURDIR}/../../_robot/foldercontents-rearrange.png
+       ...  css=#btn-rearrange
+       Capture and crop page screenshot
+       ...  ${CURDIR}/../../_robot/foldercontents-upload.png
+       ...  css=#btn-upload
+       Capture and crop page screenshot
+       ...  ${CURDIR}/../../_robot/foldercontents-cut.png
+       ...  css=#btn-cut
+       Capture and crop page screenshot
+       ...  ${CURDIR}/../../_robot/foldercontents-copy.png
+       ...  css=#btn-copy
+       Capture and crop page screenshot
+       ...  ${CURDIR}/../../_robot/foldercontents-paste.png
+       ...  css=#btn-paste
+       Capture and crop page screenshot
+       ...  ${CURDIR}/../../_robot/foldercontents-delete.png
+       ...  css=#btn-delete
+       Capture and crop page screenshot
+       ...  ${CURDIR}/../../_robot/foldercontents-rename.png
+       ...  css=#btn-rename
+       Capture and crop page screenshot
+       ...  ${CURDIR}/../../_robot/foldercontents-tags.png
+       ...  css=#btn-tags
+       Capture and crop page screenshot
+       ...  ${CURDIR}/../../_robot/foldercontents-state.png
+       ...  css=#btn-workflow
+       Capture and crop page screenshot
+       ...  ${CURDIR}/../../_robot/foldercontents-properties.png
+       ...  css=#btn-properties
+       Capture and crop page screenshot
+       ...  ${CURDIR}/../../_robot/foldercontents-searchbox.png
+       ...  css=#filter
+
+.. .. figure:: ../../_robot/foldercontents.png
+      :align: center
+      :alt: folder contents
+
 
 The general method is to select one or more items, by checking the checkbox in front of their name, and then performing the desired operation.
 
@@ -27,6 +86,7 @@ The first icon lets you select the columns to show. This can help you find the r
 The second item in the horizontal bar shows how many items you have selected.
 
 |rearrange|
+
 Press **"Rearrange"** to sort all items in the folder, for instance alphabetically on their title, or chronologically by ``creation date``, ``published date`` or ``date last modified``.
 
 .. warning::
@@ -37,7 +97,6 @@ Press **"Rearrange"** to sort all items in the folder, for instance alphabetical
 |cut| - |copy| - |paste|
 
 **"Cut"**, **"Copy"** and **"Paste"** do what you :doc:`expect them to do <cutting-copying-and-pasting-items>`.
-
 
 |delete|
 

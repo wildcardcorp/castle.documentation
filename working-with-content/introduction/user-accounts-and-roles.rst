@@ -1,7 +1,6 @@
 Castle User Accounts and Roles
 =============================
 
-.. include:: ../../_robot_anon.rst
 
 Castle web sites come in many flavors, ranging from personal websites
 with one user to community, organization, or business websites that could have hundreds of users.
@@ -49,10 +48,10 @@ A toolbar has appeared on the left, which has a number of icons and actions that
 Her name is mentioned on the right side of the top toolbar.
 A submenu opens when she clicks on this, allowing her to log out and perform various other options.
 
-..image:: welcomepage.png
+.. image:: welcomepage.png
 
-.. code:: robotframework
-   :class: hidden
+.. .. code:: robotframework
+      :class: hidden
 
        Enable autologin as  Manager
        ${user_id} =  Translate  user_id
@@ -71,9 +70,9 @@ A submenu opens when she clicks on this, allowing her to log out and perform var
        ...    css=#above-content-wrapper
        ...    css=div.Castle-toolbar-container
 
-.. figure:: ../../_robot/loggedin-surfing.png
-   :align: center
-   :alt: Logged in surfing
+.. .. figure:: ../../_robot/loggedin-surfing.png
+      :align: center
+      :alt: Logged in surfing
 
 User Roles
 ----------

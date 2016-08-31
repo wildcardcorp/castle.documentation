@@ -2,6 +2,8 @@
 Conceptual Overview
 ===========================
 
+.. Many of the images on this page say Plone.  Might want to change them to Castle?
+
 An explanation of Castle as a content management system
 
 What is Castle?

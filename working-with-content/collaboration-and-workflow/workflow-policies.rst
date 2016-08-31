@@ -1,5 +1,5 @@
 Workflow Policies
-======================
+====================== 
 
 Workflow policies allow a site administrator to create a formalized system for controlling publication and content management as a step-by-step flow involving different users in set roles.
 

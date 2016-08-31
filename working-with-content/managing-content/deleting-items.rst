@@ -6,7 +6,7 @@ Items may be deleted from a folder with ease.
 
 Sometimes it is necessary to delete a content item. Again, the easiest way to do this is by using "Manage Content" on the Toolbar.
 
-..This immage can remain the same as the original
+.. This immage can remain the same as the original
 
 .. code:: robotframework
    :class: hidden

@@ -1,7 +1,7 @@
 
 
 Next/Previous Navigation
-========================
+======================== 
 
 Automatic previous-next links for content items in a folder can be enabled under the Settings tab for a folder.
 

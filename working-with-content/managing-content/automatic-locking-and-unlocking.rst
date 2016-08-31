@@ -1,4 +1,4 @@
-Automatic Locking and Unlocking
+Automatic Locking and Unlocking 
 ====================================
 
 Castle gives you a locking message that will tell you that a document was locked, by whom, and how long ago - so you won't accidentally stomp on somebody else's changes.
