@@ -1,5 +1,5 @@
-Editing Content
-===============
+Editing Content - Insert
+========================
 
 Editing content in Castle is a simple process because everything is done with tiles.
 
@@ -81,7 +81,8 @@ The content is seperated into six catagories.  The catagories and their descript
   - Document byline - adds an author byline and the date the information was last modified.
     - defaults to the currently logged in user.
 	.. image:: byline.png
-  - Related items
+  - Related items - if you have designated related items in the properties menu this tile can be used to add that content to the page.
+    .. image:: relateditems.png
   
 **Advanced**
   - Content listing - displays the content listing of this items
@@ -98,7 +99,9 @@ The content is seperated into six catagories.  The catagories and their descript
   .. image:: query.png
   - Document Viewer - adds a document viewer tile.  Choose the file you want to be displayed in the viewer.
   .. image:: viewer.png
-  .. 
+  
+  
+   
 	
 	
 

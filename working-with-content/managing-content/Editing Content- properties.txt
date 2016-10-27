@@ -1,0 +1,65 @@
+Editing content in Castle is a simple process because everything is done with tiles.
+
+To edit a page you can either find the page by clicking on **Manage Content** from the left hand menu and selecting the *Edit* icon from the actions menu
+
+.. image:: manageedit.png
+
+ or if you are already on the page you want to edit just click **Edit** from the right hand menu which will bring up the pageready to be edited.
+
+
+.. image:: readytoedit.png
+
+The default page will show tiles for **Title**, **Description**, and **Text**.
+
+.. image:: defaultedit.png
+
+Click on the **Properties** button to bring up the properties menu.
+
+.. image:: properties.png
+
+The **Properties** menu has five tabs.
+
+- Default - this tab allows you to add a lead image and caption for the selected page.  It also has a Change Note area where the user can leave notes about changes they made.
+
+.. image:: properties.png
+
+- Categorization 
+  - Related Items - **Browse** button allows you to search the entire site for anything that is related to the current page.  Click the checkbox next to the related pages and click the **Done** button when you are finished.
+  
+  .. image:: selectitems.png
+  
+  To add the related items to the page you need to insert a **Related Items** tile.  This can be done through the Edit -> Insert menu under the properties column.
+  
+  The **Add** button allows you to add a new page, link, event, folder, or news item that relates to your page.
+  
+  Or you can use the search bar to search the sit for a specific item.
+  
+  - Tags - used for ad-hoc organization of content
+  
+  - Locations - any locations to be refered to with this content
+  
+  - Coordinates - add coordinates to allow this content to be maped. You can select more that one set of coordinates.  Click the **Add Location** button and type in the location to be pinned. 
+  
+  .. image:: selectcoord.png
+  
+  - Settings - Exclude from navigation - checking this box will exclude this content from the navigation tree.
+	
+    - Search term pins - searches this content should show in top results for.
+	
+	- Allow discussion - this is used to determine whether or not you want to allow discussion on this content.
+	
+- Dates -
+  - Publishing date - used to set the date and time this content is to be published.  If the date is in the future this content will not show up in listings or searches until that date.
+  
+  - Expiration date - used to set a date when the content will expire.  When this date is reached the content will no longer show in listings or searches.
+  
+  - Ownership -
+    - Creators - shows the creator or creators of this content.
+	
+	- Contributors - shows the names of people who have contributed to this content.
+	
+	- Rights - shows copyright statement or other rights information related to this content.
+	
+When you have finished click the **Done** button in the lower right corner of the menu.  
+
+When you have finished editing your page make sure to click the **Save** button in the upper right corner of the screen.  If you do not like your changes you can click the **Cancel** button in the upper right corner to cancel all changes made during the current session.
