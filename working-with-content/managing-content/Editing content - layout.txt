@@ -1,11 +1,11 @@
 Editing Content - Layout
 ========================
 
-To edit a page you can either find the page by clicking on **Manage Content** from the left hand menu and selecting the *Edit* icon from the actions menu
+To edit content you can either find the content by clicking on **Manage Content** from the left hand menu and selecting the *Edit* icon from the actions menu
 
 .. image:: manageedit.png
 
- or if you are already on the page you want to edit just click **Edit** from the right hand menu which will bring up the page ready to be edited.
+ or if you are already working with the content you want to edit just click **Edit** from the right hand menu which will bring up the current content ready to be edited.
 
 
 .. image:: readytoedit.png
@@ -14,7 +14,7 @@ The default page will show tiles for **Title**, **Description**, and **Text**.
 
 .. image:: defaultedit.png
 
-If you want to change the basic layout of the item you can click on the **Layout** button from the top menu. Choose *Change* from the dropdown menu.  You will receive a warning letting you know that you will destroy the custom layout and asking if you would like to continue.  If you still wish to continue click *OK* and you will see the available layout options.
+If you want to change the basic layout of the content you can click on the **Layout** button from the top menu. Choose *Change* from the dropdown menu.  You will receive a warning letting you know that you will destroy the custom layout and asking if you would like to continue.  If you still wish to continue click *OK* and you will see the available layout options.
 
 .. image:: layoutoptions.png
 

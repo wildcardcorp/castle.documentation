@@ -3,36 +3,36 @@ Editing Content - Insert
 
 Editing content in Castle is a simple process because everything is done with tiles.
 
-To edit a page you can either find the page by clicking on **Manage Content** from the left hand menu and selecting the *Edit* icon from the actions menu
+To edit content you can either find the content by clicking on **Manage Content** from the left hand menu and selecting the *Edit* icon from the actions menu
 
 .. image:: manageedit.png
 
- or if you are already on the page you want to edit just click **Edit** from the right hand menu which will bring up the pageready to be edited.
+ or if you are already working with the content you want to edit just click **Edit** from the right hand menu which will bring up the content ready to be edited.
 
 
 .. image:: readytoedit.png
 
-The default page will show tiles for **Title**, **Description**, and **Text**.
+The default content will show tiles for **Title**, **Description**, and **Text**.
 
 .. image:: defaultedit.png
 
-To add content click on the tile you want to fill in and put your information there.
+To add information to these three tiles click on the tile you want to edit and fill in your information there.
 
-If you want to add something else such as an image click the **Layout** button on the top left of the page and choose the **Customize** option.
+If you want to add an addtional tile such as an image click the **Layout** button on the top left of the page and choose the **Customize** option.
 
 .. image:: customize.png
  
-Click the **Insert** button from the top menu and this will bring up a list of all content which can be added to the page.
+Click the **Insert** button from the top menu and this will bring up a list of all of the tile types which can be added to the content.
  
 .. image:: insert.png
 
-Click on the type of content you want to add and you will see a popup menu specific to that type of content.  Fill in all of the required fields which are marked with a red dot and click the *Save* button.  You will be returned to your page and have a tile which can be placed where ever you want it to appear on the page.  When you have the tile in the desired positiion click once and the tile will be placed there.  
+Click on the type of tile you want to add and you will see a popup menu specific to that type of tile.  Fill in all of the required fields which are marked with a red dot and click the *Save* button.  You will be returned to your page and have a tile which can be placed where ever you want it to appear on the page.  When you have the tile in the desired positiion click once and the tile will be placed there.  
 
 You may click on any tile at a later time if you decided you need to edit it or delete it all together.  When you click on a tile you will see two buttons on the bottom right corner.  One is *Edit* the other is *Delete*.  Clicking on the Edit button will bring you back to the Edit popup menu and you can make any changes you desire.  When you are finished click the *Save* button.
 
 The *Delete* button will remove the tile completely from the page.  When you click *Delete* you will be asked to confirm your delete.  Click *Confirm Delete* to remove the tile and *Cancel* to leave it as it is.
 
-The content is seperated into six catagories.  The catagories and their descriptions are as folllows:
+The tile types are seperated into six catagories.  The catagories and their descriptions are as folllows:
 
 **Structure**
   - basic structural layout of the page.
@@ -72,10 +72,10 @@ The content is seperated into six catagories.  The catagories and their descript
 	.. image:: share.png
 	
 **Fields**
-  - These are the default fields that are already set on the page.
-    - Summary - A short summary of the page's content
+  - These are the default fields that are already set on the item.
+    - Summary - A short summary of the item's content
 	- Title - The title of the page
-	- Text - A space for adding text to the page.
+	- Text - A space for adding text to the item.
 	
 **Properties**
   - Document byline - adds an author byline and the date the information was last modified.

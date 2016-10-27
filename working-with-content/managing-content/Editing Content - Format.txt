@@ -2,11 +2,11 @@ Editing Content - Format
 ========================
 
 
-To edit a page you can either find the page by clicking on **Manage Content** from the left hand menu and selecting the *Edit* icon from the actions menu
+To edit content you can either find the content by clicking on **Manage Content** from the left hand menu and selecting the *Edit* icon from the actions menu
 
 .. image:: manageedit.png
 
- or if you are already on the page you want to edit just click **Edit** from the right hand menu which will bring up the pageready to be edited.
+ or if you are already working with the content you want to edit just click **Edit** from the right hand menu which will bring up the pageready to be edited.
 
 
 .. image:: readytoedit.png
@@ -24,7 +24,7 @@ Select the tile you wish to format. Then click on the **Format** button.
 .. image:: format.png
 
 This will bring up a menu with two columns, one named **Tile** and the other named **Row**.  
-Under the **Tile** menu there are seven options.
+Under the **Tile** menu there are several options.
 
 - Background - this will add a shaded square background to the currently selected tile.
 - Background with rounded corners - this will added a shaded square background with rounded corners to the selected tile.

@@ -1,15 +1,15 @@
 Editing content in Castle is a simple process because everything is done with tiles.
 
-To edit a page you can either find the page by clicking on **Manage Content** from the left hand menu and selecting the *Edit* icon from the actions menu
+To edit an content you can either find the content by clicking on **Manage Content** from the left hand menu and selecting the *Edit* icon from the actions menu
 
 .. image:: manageedit.png
 
- or if you are already on the page you want to edit just click **Edit** from the right hand menu which will bring up the pageready to be edited.
+ or if you are already working with the content you want to edit just click **Edit** from the right hand menu which will bring up the item ready to be edited.
 
 
 .. image:: readytoedit.png
 
-The default page will show tiles for **Title**, **Description**, and **Text**.
+The default item will show tiles for **Title**, **Description**, and **Text**.
 
 .. image:: defaultedit.png
 
@@ -19,18 +19,18 @@ Click on the **Properties** button to bring up the properties menu.
 
 The **Properties** menu has five tabs.
 
-- Default - this tab allows you to add a lead image and caption for the selected page.  It also has a Change Note area where the user can leave notes about changes they made.
+- Default - this tab allows you to add a lead image and caption for the selected content.  It also has a Change Note area where you can leave notes about changes they made.
 
 .. image:: properties.png
 
 - Categorization 
-  - Related Items - **Browse** button allows you to search the entire site for anything that is related to the current page.  Click the checkbox next to the related pages and click the **Done** button when you are finished.
+  - Related Items - **Browse** button allows you to search the entire site for anything that is related to the current content.  Click the checkbox next to the related items and click the **Done** button when you are finished.
   
   .. image:: selectitems.png
   
   To add the related items to the page you need to insert a **Related Items** tile.  This can be done through the Edit -> Insert menu under the properties column.
   
-  The **Add** button allows you to add a new page, link, event, folder, or news item that relates to your page.
+  The **Add** button allows you to add a new page, link, event, folder, or news item that relates to your item.
   
   Or you can use the search bar to search the sit for a specific item.
   
@@ -42,7 +42,9 @@ The **Properties** menu has five tabs.
   
   .. image:: selectcoord.png
   
-  - Settings - Exclude from navigation - checking this box will exclude this content from the navigation tree.
+  - Settings -
+
+    -  Exclude from navigation - checking this box will exclude this content from the navigation tree.
 	
     - Search term pins - searches this content should show in top results for.
 	
@@ -62,4 +64,4 @@ The **Properties** menu has five tabs.
 	
 When you have finished click the **Done** button in the lower right corner of the menu.  
 
-When you have finished editing your page make sure to click the **Save** button in the upper right corner of the screen.  If you do not like your changes you can click the **Cancel** button in the upper right corner to cancel all changes made during the current session.
+When you have finished editing your content make sure to click the **Save** button in the upper right corner of the screen.  If you do not like your changes you can click the **Cancel** button in the upper right corner to cancel all changes made during the current session.
