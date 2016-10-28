@@ -1,10 +1,7 @@
-Caching
+Caching 
 =======
 
-.. robot screenshot not working for unknown reason, robot user has no access to cache although logged in as Manager
-.. replacing with static screenshot for now
-
-.. .. include:: ../../_robot.rst
+..image:: Caching.png
 
 .. .. code:: robotframework
 ..    :class: hidden
@@ -27,11 +24,11 @@ Caching
 
 It is always a balancing act between the 'freshness' of the content, and speed.
 
-Enabling caching here withing Plone is highly recommended, but fine-tuning it can be more of an art than a science.
+Enabling caching here withing Castle is highly recommended, but fine-tuning it can be more of an art than a science.
 
-Plone comes with a fairly conservative, but highly effective set of defaults. Importing those settings is your best course of action in almost all cases.
+Castle comes with a fairly conservative, but highly effective set of defaults. Importing those settings is your best course of action in almost all cases.
 
-Plone's internal caching works even better when used together with an external cache, such as Varnish.
+Castle's internal caching works even better when used together with an external cache, such as Varnish.
 
 See the :doc:`Guide to caching </manage/deploying/caching/index>` for more information.
 

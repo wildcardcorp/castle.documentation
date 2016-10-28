@@ -1,10 +1,9 @@
-Dexterity Content Types
+Dexterity Content Types 
 =======================
 
+.. image:: DexContent.png
 
-.. include:: ../../_robot.rst
-
-.. code:: robotframework
+.. .. code:: robotframework
    :class: hidden
 
    *** Test Cases ***
@@ -15,7 +14,7 @@ Dexterity Content Types
        ...  ${CURDIR}/../../_robot/dexterity-setup.png
        ...  css=#content
 
-.. figure:: ../../_robot/dexterity-setup.png
+.. .. figure:: ../../_robot/dexterity-setup.png
    :align: center
    :alt: Dexterity setup configuration
 

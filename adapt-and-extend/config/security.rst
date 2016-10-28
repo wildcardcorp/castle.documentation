@@ -1,9 +1,9 @@
-Security settings
+Security settings 
 =================
 
-.. include:: ../../_robot.rst
+.. image:: secsettings.png
 
-.. code:: robotframework
+.. .. code:: robotframework
    :class: hidden
 
    *** Test Cases ***
@@ -14,7 +14,7 @@ Security settings
        ...  ${CURDIR}/../../_robot/security-setup.png
        ...  css=#content
 
-.. figure:: ../../_robot/security-setup.png
+.. .. figure:: ../../_robot/security-setup.png
    :align: center
    :alt: Security setup configuration
 

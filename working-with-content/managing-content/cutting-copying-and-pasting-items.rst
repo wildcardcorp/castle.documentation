@@ -1,7 +1,6 @@
 Cutting, Copying and Pasting Items
 =======================================
 
-.. include:: ../../_robot.rst
 
 Cut, copy, and paste operations involve moving one or more items from one folder to another.
 
@@ -11,14 +10,16 @@ Cut/Paste
 Moving items from one area to another on a website is a common task.
 
 It may be that you, or someone else, has created the item in the wrong place.
-Or, as time goes by, you decide that reordering content will make your site easier to use, for instance in an intranet when projects and their associated files get transferred to another department in the organisation.
+Or, as time goes by, you decide that reordering content will make your site easier to use, for instance in an intranet when projects and their associated files get transferred to another department in the organization.
 
-Whatever the reason, Plone makes it easy to tranfer individual content items, or even whole folders containing hundreds of items, to another location. All internal links will still work. Plone will even redirect external links (where other websites have linked to this content item direct) in most cases. This mechanism can break, however, if you create a new item with the same title and same location as the one you moved.
+Whatever the reason, Castle makes it easy to transfer individual content items, or even whole folders containing hundreds of items, to another location. All internal links will still work. Castle will even redirect external links (where other websites have linked to this content item direct) in most cases. This mechanism can break, however, if you create a new item with the same title and same location as the one you moved.
 
-The easiest way to move content is by using "Contents" on the Toolbar.
+The easiest way to move content is by using "Manage Content" on the Toolbar.
 
-.. code:: robotframework
-   :class: hidden
+.. image:: ManageContent.png
+
+.. .. code:: robotframework
+     :class: hidden
 
    *** Test Cases ***
 
@@ -29,9 +30,11 @@ The easiest way to move content is by using "Contents" on the Toolbar.
        ...  ${CURDIR}/../../_robot/foldercontents-cutpaste.png
        ...  css=#content
 
-.. figure:: ../../_robot/foldercontents-cutpaste.png
-   :align: center
-   :alt: cutting and pasting content
+.. .. figure:: ../../_robot/foldercontents-cutpaste.png
+     :align: center
+     :alt: cutting and pasting content
+
+
 
 You see an overview of all content in the folder, and in this screenshot that is the content in the top-level or *root* of the site.
 

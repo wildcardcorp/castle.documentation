@@ -1,14 +1,15 @@
 Adding News Items
-======================
+====================== 
 
-.. include:: ../../_robot.rst
 
 Castle web sites have a built-in system for publishing news items.
 
 Use the **Add...** menu for a folder to add a news item:
 
-.. code:: robotframework
-   :class: hidden
+.. image:: Add.png
+
+.. .. code:: robotframework
+      :class: hidden
 
    *** Test Cases ***
 
@@ -30,14 +31,16 @@ Use the **Add...** menu for a folder to add a news item:
        ...  css=div.plone-toolbar-container
        ...  css=#plone-contentmenu-factories ul
 
-.. figure:: ../../_robot/adding-news-items_add-menu.png
-   :align: center
-   :alt: add-new-news-item-menu.png
+.. .. figure:: ../../_robot/adding-news-items_add-menu.png
+      :align: center
+      :alt: add-new-news-item-menu.png
 
 You will see the *Add News Item* panel:
 
-.. code:: robotframework
-   :class: hidden
+.. image:: AddNews.png
+
+.. .. code:: robotframework
+      :class: hidden
 
    *** Test Cases ***
 
@@ -52,9 +55,9 @@ You will see the *Add News Item* panel:
        ...  ${CURDIR}/../../_robot/adding-news-items_add-form.png
        ...  css=#content
 
-.. figure:: ../../_robot/adding-news-items_add-form.png
-   :align: center
-   :alt:
+.. .. figure:: ../../_robot/adding-news-items_add-form.png
+      :align: center
+      :alt:
    
 Fill in the **Title** field and Castle will fill in the ID and Url field.  This screen also shows the state of the page, whether it is published, unpublished, or pending approval for publication. Click the **Create and Edit** button.  You will then see your news item ready to be edited.
 

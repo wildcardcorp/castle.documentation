@@ -1,7 +1,6 @@
 Advanced Control
-================
+================ 
 
-.. include:: ../../_robot-tall.rst
 
 The publication control system, under the advanced menu, has sophisticated features for setting availability by date and by context.
 

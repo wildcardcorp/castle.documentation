@@ -1,9 +1,9 @@
-Social Media metadata
+Social Media metadata 
 =====================
 
-.. include:: ../../_robot.rst
+.. This returns an error in the Castle Demo
 
-.. code:: robotframework
+.. .. code:: robotframework
    :class: hidden
 
    *** Test Cases ***
@@ -14,7 +14,7 @@ Social Media metadata
        ...  ${CURDIR}/../../_robot/social-setup.png
        ...  css=#content
 
-.. figure:: ../../_robot/social-setup.png
+.. .. figure:: ../../_robot/social-setup.png
    :align: center
    :alt: Social Media setup configuration
 

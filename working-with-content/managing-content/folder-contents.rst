@@ -1,17 +1,17 @@
 Folder Contents
 ====================
 
-.. include:: ../../_robot.rst
 
-The Contents item on the Toolbar shows a list of items in a folder.
+The Manage Content item on the Toolbar shows a list of items in a folder.
 It is the place for simple item-by-item actions and for bulk actions such as copy,
 cut, paste, move, reorder, etc.
 
-The Contents tab for folders is like "File Manager" or "My Computer" system utilities in Windows and Linux desktops and the "Finder" in Mac OS X, with similar functionality.
+The Manage Content tab for folders is like "File Manager" or "My Computer" system utilities in Windows and Linux desktops and the "Finder" in Mac OS X, with similar functionality.
 
+.. image:: ManageContent.png
 
-.. code:: robotframework
-   :class: hidden
+.. .. code:: robotframework
+      :class: hidden
 
    *** Test Cases ***
 
@@ -64,9 +64,9 @@ The Contents tab for folders is like "File Manager" or "My Computer" system util
        ...  ${CURDIR}/../../_robot/foldercontents-searchbox.png
        ...  css=#filter
 
-.. figure:: ../../_robot/foldercontents.png
-   :align: center
-   :alt: folder contents
+.. .. figure:: ../../_robot/foldercontents.png
+      :align: center
+      :alt: folder contents
 
 
 The general method is to select one or more items, by checking the checkbox in front of their name, and then performing the desired operation.
@@ -86,30 +86,31 @@ The first icon lets you select the columns to show. This can help you find the r
 The second item in the horizontal bar shows how many items you have selected.
 
 |rearrange|
+
 Press **"Rearrange"** to sort all items in the folder, for instance alphabetically on their title, or chronologically by ``creation date``, ``published date`` or ``date last modified``.
 
 .. warning::
 
     Be careful when using this option, especially in the root of the site. As folders get re-arranged, it will change the order of the navigation tabs in your site.
 
-|upload|
-
-**"Upload"** allows you to upload one or more files (like images or PDF's) from your computer.
 
 |cut| - |copy| - |paste|
 
 **"Cut"**, **"Copy"** and **"Paste"** do what you :doc:`expect them to do <cutting-copying-and-pasting-items>`.
 
-
 |delete|
 
 The **"Delete"** button has a red color, since this is a potentially :doc:`dangerous operation <deleting-items>`.
+
+|recyclebin|
+
+The **Recycle Bin** allows you to move something to the recyclebin rather than permanently deleting it.
 
 |rename|
 
  **Rename** will open up a form where you can change the Title and the *short name* for an item. The **Title** can be anything you like, but the **short name** is part of the URL. That means you have to abide by certain rules:
 
-- it cannot contain any spaces or special characters like \* or \\. When you create an item, Plone generates a safe *short name* from the Title, but when you change this later you should take care this remains a valid URL.
+- it cannot contain any spaces or special characters like \* or \\. When you create an item, Castle generates a safe *short name* from the Title, but when you change this later you should take care this remains a valid URL.
 - it has to be unique in a folder. You can have two items with the same Title (although it would be confusing), but you cannot have two items with the same *short name* within the same folder. It's perfectly fine to have the same *short name* being used in different folders.
 
 |tags|

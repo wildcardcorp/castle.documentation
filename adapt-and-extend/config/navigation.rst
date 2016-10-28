@@ -1,9 +1,9 @@
 Navigation settings
-===================
+=================== 
 
-.. include:: ../../_robot.rst
+.. image:: navigation.png
 
-.. code:: robotframework
+.. .. code:: robotframework
    :class: hidden
 
    *** Test Cases ***
@@ -14,11 +14,11 @@ Navigation settings
        ...  ${CURDIR}/../../_robot/navigation-setup.png
        ...  css=#content
 
-.. figure:: ../../_robot/navigation-setup.png
+.. .. figure:: ../../_robot/navigation-setup.png
    :align: center
    :alt: Navigation setup configuration
 
-Plone automatically generates navigation tabs from items you put in the *root*, or top level, of your site. The first two settings allow you to control this:
+Castle automatically generates navigation tabs from items you put in the *root*, or top level, of your site. The first two settings allow you to control this:
 
 - do you want them to be generated?
 - and if so, should it only be done for Folders or also other items like Pages?

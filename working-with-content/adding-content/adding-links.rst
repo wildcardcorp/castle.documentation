@@ -1,15 +1,16 @@
-Adding Links
+Adding Links 
 ============
 
-.. include:: ../../_robot.rst
 
 In addition to links embedding within pages, Links can be created as discrete content items.
 Having links as discrete items lets you do things like organizing them in folders, setting keywords on them to facilitate grouping in lists and search results, or include them in navigation.
 
 Add a link by clicking the menu choice in the **Add...** menu:
 
-.. code:: robotframework
-   :class: hidden
+.. image:: Add.png
+
+.. .. code:: robotframework
+      :class: hidden
 
    *** Test Cases ***
 
@@ -31,14 +32,16 @@ Add a link by clicking the menu choice in the **Add...** menu:
        ...  css=div.plone-toolbar-container
        ...  css=#plone-contentmenu-factories ul
 
-.. figure:: ../../_robot/adding-links_add-menu.png
-   :align: center
-   :alt: add-new-menu.png
+.. .. figure:: ../../_robot/adding-links_add-menu.png
+      :align: center
+      :alt: add-new-menu.png
 
 You will see the Add*Link* panel:
 
-.. code:: robotframework
-   :class: hidden
+.. image:: AddLink.png
+
+.. .. code:: robotframework
+      :class: hidden
 
    *** Test Cases ***
 
@@ -53,9 +56,9 @@ You will see the Add*Link* panel:
        ...  ${CURDIR}/../../_robot/adding-links_add-form.png
        ...  css=#content
 
-.. figure:: ../../_robot/adding-links_add-form.png
-   :align: center
-   :alt: Adding links form
+.. .. figure:: ../../_robot/adding-links_add-form.png
+      :align: center
+      :alt: Adding links form
    
 
 Fill in the **Title** field and Castle will fill in the ID and Url field based on the title you entered.  This screen also shows the state of the page, whether it is published, unpublished, or pending approval for publication. Click the **Create and Edit** button.  You will then see your page ready to be edited.

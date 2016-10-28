@@ -4,9 +4,9 @@ Introduction and overview
 
 This screen, which is available for the roles ``Site Admin`` and ``Manager``, is where you can configure most aspects of your website.
 
-.. include:: ../../_robot.rst
+.. image:: SiteSetup.png
 
-.. code:: robotframework
+.. .. code:: robotframework
    :class: hidden
 
    *** Test Cases ***
@@ -17,12 +17,12 @@ This screen, which is available for the roles ``Site Admin`` and ``Manager``, is
        ...  ${CURDIR}/../../_robot/site-overview.png
        ...  css=#content
 
-.. figure:: ../../_robot/site-overview.png
+.. .. figure:: ../../_robot/site-overview.png
    :align: center
    :alt: Site setup configuration
 
 
-When you have just created a new Plone site, you will see a warning here telling you to set up outgoing email for your site.
+When you have just created a new Castle site, you will see a warning here telling you to set up outgoing email for your site.
 
 We'll come to that later.
 The configuration area is divided into several parts, leading to further setup screens.
@@ -34,18 +34,28 @@ The configuration area is divided into several parts, leading to further setup s
 General
 -------
 
+Announcements
+    This sets up email lists for announcements from the site.
+Business
+    This sets up specifics for a business.
+.. Castle
+.. Returns an error	
 Date and Time
     This sets up the :doc:`date and time related settings like timezone <date-and-time>`
 Language
     :doc:`What languages are available <language>`. Also how the URL scheme works for multilingual sites.
 Mail
     Configure :doc:`outgoing email <mail>`. This is needed to register users, email password reset requests and the like.
+Change Password
+    Allows a user to change his/her password
+Personal Preferences
+    Allows a user to set his/her preferences	
 Navigation
     Configure :doc:`how navigation is constructed <navigation>`. Which content types should appear in navigation, should folders on the top level become tabs, and which workflows to show.
 Site
     Various :doc:`site wide settings <site>`: Site name, logo, metadata, settings for search engines and more.
 Add-ons
-    :doc:`Activate and deactivate <add-ons>` add-ons that enhance Plone's functionality.
+    :doc:`Activate and deactivate <add-ons>` add-ons that enhance Castle's functionality.
 Search
     :doc:`Various search setting: <search>`: Activate live search, define which content types should be searched, etc.
 Discussion
@@ -67,7 +77,7 @@ Content Rules
 Editing
     Control :doc:`various editing settings <editing>`: which graphical editor to use, should automatic locking be performed when someone is editing, etc.
 Image Handling
-    Set up the :doc:`image sizes that Plone generates <image-handling>` and control image quality.
+    Set up the :doc:`image sizes that Castle generates <image-handling>` and control image quality.
 Markup
     Control if you want to :doc:`allow Markdown, Restructured Text <markup>` and other text formats.
 Content Settings
@@ -98,9 +108,14 @@ Advanced
 .. note::
 
    The following can have large impact for your site. Take care when applying new settings.
-
+.. Audit Log
+.. Returns an Error
 Maintenance
     :doc:`Maintenance for the back-end database <maintenance>`. You can check the size of the database, and regularly *pack* it to keep it in optimal condition.
+Sessions
+    Shows active sessions
+Tasks
+    Shows Celery tasks	
 Management Interface
     This will take you to the :doc:`ZMI, or Zope Management Interface <management-interface>`. In normal use, there is no need to go here. **Experts only**. But should you require access to the underlying software stack, here it is.
 Caching

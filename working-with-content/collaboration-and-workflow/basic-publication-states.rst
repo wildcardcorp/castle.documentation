@@ -1,14 +1,14 @@
 Basic Publication States
-=============================
+============================= 
 
-The publication control system for Plone is very flexible, starting with basic settings for making an item private or public.
+The publication control system for Castle is very flexible, starting with basic settings for making an item private or public.
 
 In the toolbar, for any content type --folders, images, pages, etc., and any specialized content types -- there is an item for publication state. This *state* menu has settings for controlling publication state:
 
-.. include:: ../../_robot.rst
+.. image:: publishedstate.png
 
-.. code:: robotframework
-   :class: hidden
+.. .. code:: robotframework
+      :class: hidden
 
    *** Test Cases ***
 
@@ -39,13 +39,17 @@ In the toolbar, for any content type --folders, images, pages, etc., and any spe
                ...  css=#content-header
                ...  css=div.plone-toolbar-container
 
-.. figure:: ../../_robot/workflow-basic.png
-   :align: center
-   :alt: basic workflow menu
+.. .. figure:: ../../_robot/workflow-basic.png
+      :align: center
+      :alt: basic workflow menu
 
 
-The toolbar will show the current publication state for the content item, such as *State: Published*, as shown above.
+The toolbar will show the current publication state for the content item, such as *State: Private*, as shown above.
 Private is the initial state when you create a content item -- a page, a news item -- and in the private state, as the name indicates, the content item will generally not be available to visitors to the website.
+
+Clicking on *State* on the toolbar will pull up the publishing options.
+
+.. image:: PSprivate.png
 
 The *Publish* menu choice will make the content item available on the web site to anonymous visitors.
 The *Submit for publication* menu choice is used on web sites where there are content editors who must approve items for publication, as discussed below.
@@ -70,8 +74,10 @@ After a content item has been *published*, it may be *retracted*, to change the 
 private, if desired.
 The menu choices in the state menu will change accordingly:
 
-.. code:: robotframework
-   :class: hidden
+.. image:: publishedpage.png
+
+.. .. code:: robotframework
+      :class: hidden
 
    Show sendback
        Go to  ${PLONE_URL}/samplepage
@@ -102,10 +108,9 @@ The menu choices in the state menu will change accordingly:
                ...  css=#content-header
                ...  css=div.plone-toolbar-container
 
-.. figure:: ../../_robot/workflow-reject.png
-   :align: center
-   :alt: basic workflow menu
-
+.. .. figure:: ../../_robot/workflow-reject.png
+     :align: center
+     :alt: basic workflow menu
 
 Instead of completely deleting items in your site that have become obsolete or undesired for some reason, you can also think about retracting ("unpublishing"), or setting to *private*, any content .
 

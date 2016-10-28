@@ -1,7 +1,7 @@
 Introduction
 ====================
 
-A Conceptual Overview of Plone
+A Conceptual Overview of Castle
 
 .. toctree::
     :maxdepth: 2

@@ -1,9 +1,9 @@
 Content Settings
-================
+================ 
 
-.. include:: ../../_robot.rst
+..image:: ContentSettings.png
 
-.. code:: robotframework
+.. .. code:: robotframework
    :class: hidden
 
    *** Test Cases ***
@@ -23,7 +23,7 @@ Content Settings
        ...  css=#content
 
 
-.. figure:: ../../_robot/content-setup.png
+.. .. figure:: ../../_robot/content-setup.png
    :align: center
    :alt: Content setup configuration
 
@@ -32,7 +32,7 @@ This seemingly innocent looking screen is the gateway to setting up advanced fun
 
 When (Default) is selected, as in the above screenshot, you set the workflow that new content types will get. It is, so to say, the default one for your entire website.
 
-Plone comes with a few pre-defined workflows:
+Castle comes with a few pre-defined workflows:
 
 Simple publication workflow
     This is the default: Items start out as "private", and then can get published.
@@ -44,15 +44,16 @@ Intranet/Extranet workflow
     Meant for intranets, where the majority of users is logged in.
     Some content can be 'externally published' so it is available to anonymous visitors as well.
 No Workflow
-    In this one, items 'inherit' the state of their parent folder. So, if a certain type of content has the "No Workflow" workflow, it will be published if the folder where it lives is published, and privat if the folder where it lives is private.
+    In this one, items 'inherit' the state of their parent folder. So, if a certain type of content has the "No Workflow" workflow, it will be published if the folder where it lives is published, and private if the folder where it lives is private.
 
 
-All of these workflows can be assigned on a per-contenttype base.
+All of these workflows can be assigned on a per-content type base.
 
 Once you select a content type in the top drop-down field, more options become available. In the screenshot below, we have picked the "Page" content type:
 
+..image:: ContentSetPage.png
 
-.. figure:: ../../_robot/content-document.png
+.. .. figure:: ../../_robot/content-document.png
    :align: center
    :alt: Content Page configuration
 
@@ -74,7 +75,7 @@ New workflow:
     Allows you to change the workflow for this content type.
 
 
-All in all, this allows sophisticated setups, where some content items just follow the Plone standard workflow, but some others (think of a content type for Expenditures) goes through a whole other chain of workflow states.
+All in all, this allows sophisticated setups, where some content items just follow the Castle standard workflow, but some others (think of a content type for Expenditures) goes through a whole other chain of workflow states.
 
 .. note::
 

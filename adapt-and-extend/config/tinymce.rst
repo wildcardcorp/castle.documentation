@@ -1,9 +1,9 @@
 TinyMCE configuration
 =====================
 
-.. include:: ../../_robot.rst
+.. image.png
 
-.. code:: robotframework
+.. .. code:: robotframework
    :class: hidden
 
    *** Test Cases ***
@@ -14,11 +14,11 @@ TinyMCE configuration
        ...  ${CURDIR}/../../_robot/tinymce-setup.png
        ...  css=#content
 
-.. figure:: ../../_robot/tinymce-setup.png
+.. .. figure:: ../../_robot/tinymce-setup.png
    :align: center
    :alt: TinyMCE setup configuration
 
-Here you can finetune the appearance and settings of TinyMCE, the default text editor.
+Here you can fine tune the appearance and settings of TinyMCE, the default text editor.
 
 On the "Plugins and Toolbar" screen, you can enable and disable buttons on TinyMCE's toolbar.
 

@@ -1,9 +1,9 @@
-Resource Registries
+Resource Registries 
 ===================
 
-.. include:: ../../_robot.rst
+.. image:: resourcereg.png
 
-.. code:: robotframework
+.. .. code:: robotframework
    :class: hidden
 
    *** Test Cases ***
@@ -20,7 +20,7 @@ Resource Registries
 
 The Resource Registry allows access to JavaScript, CSS and LESS resources.
 
-.. figure:: ../../_robot/resource-registry.png
+.. .. figure:: ../../_robot/resource-registry.png
    :align: center
    :alt: Resource Registry
 
@@ -30,7 +30,8 @@ LESS variables
 
 Particularly useful are the many LESS variables that affect the theme of a site:
 
+.. image:: resourcereg.png
 
-.. figure:: ../../_robot/less-variables.png
+.. .. figure:: ../../_robot/less-variables.png
    :align: center
    :alt: Less variables

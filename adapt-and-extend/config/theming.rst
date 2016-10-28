@@ -1,5 +1,5 @@
-Theming
-=======
+Theming 
+======= 
 
 .. note::
 
@@ -11,9 +11,9 @@ Theming
     The "Advanced settings" tab always configures the current active theme.
     If you change the theme, previously changed settings from another theme are lost.
 
-.. include:: ../../_robot.rst
+.. image:: themes.png
 
-.. code:: robotframework
+.. .. code:: robotframework
    :class: hidden
 
    *** Test Cases ***
@@ -24,7 +24,7 @@ Theming
        ...  ${CURDIR}/../../_robot/theme-setup.png
        ...  css=#content
 
-.. figure:: ../../_robot/theme-setup.png
+.. .. figure:: ../../_robot/theme-setup.png
    :align: center
    :alt: Theme configuration
 

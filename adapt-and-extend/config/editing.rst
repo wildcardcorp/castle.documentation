@@ -1,10 +1,9 @@
 Editing
-=======
+======= 
 
+.. image:: EditSet.png
 
-.. include:: ../../_robot.rst
-
-.. code:: robotframework
+.. .. code:: robotframework
    :class: hidden
 
    *** Test Cases ***
@@ -15,7 +14,7 @@ Editing
        ...  ${CURDIR}/../../_robot/editing-setup.png
        ...  css=#content
 
-.. figure:: ../../_robot/editing-setup.png
+.. .. figure:: ../../_robot/editing-setup.png
    :align: center
    :alt: Editing setup configuration
 

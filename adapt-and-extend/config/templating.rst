@@ -1,4 +1,4 @@
-Templating in TinyMCE
+Templating in TinyMCE 
 =====================
 
 TinyMCE in Plone 5 is adapted to allow templating engine for its content.

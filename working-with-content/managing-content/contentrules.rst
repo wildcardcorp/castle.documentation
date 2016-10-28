@@ -1,6 +1,6 @@
 ===================
 Using Content Rules
-===================
+=================== 
 
 This tutorial discusses what content rules are and how to configure and use them.
 
@@ -43,7 +43,7 @@ For example, you can set up a content rule to send an email (the action) wheneve
 
 Site Manager permissions are required to in order to set up and apply content rules.
 
-**What are the triggers, conditions and actions that come with Plone 5.0?**
+**What are the triggers, conditions and actions that come with Castle?**
 
 The following general **triggers** are available by default:
 
@@ -94,12 +94,12 @@ The following **actions** are available by default:
 Creating and Defining Content Rules
 ===================================
 
-How to define content rules using the triggers and actions included in Plone
+How to define content rules using the triggers and actions included in Castle
 
 Creating a Rule
 ---------------
 
-Content rules are created globally through the Plone Control Panel ("site setup" link) and then selected from the Rules tab for the desired folder (or at the Plone site root if you want the rule applied site-wide).
+Content rules are created globally through the Castle Control Panel ("site setup" link) and then selected from the Rules tab for the desired folder (or at the Plone site root if you want the rule applied site-wide).
 
 In this example, you're going to create a content rule that will send an email any time a Page type is modified.
 
@@ -107,10 +107,10 @@ In this example, you're going to create a content rule that will send an email a
     - The first option, "Disable Globally", allows you to disable ALL content rules. This is the emergency brake, for when you have created rules that are not doing what you want.
     - In the second section of the main page for Content Rules is where any existing content rules will be listed. There are also some checkboxes to filter them, which can be useful if there are many rules defined.
 
-.. include:: ../../_robot.rst
+.. image:: contentrules.png
 
-.. code:: robotframework
-   :class: hidden
+.. .. code:: robotframework
+      :class: hidden
 
    *** Test Cases ***
 
@@ -157,9 +157,9 @@ In this example, you're going to create a content rule that will send an email a
               ...  css=#content
               ...  css=div.plone-toolbar-container
 
-.. figure:: ../../_robot/contentrules-start.png
-   :align: center
-   :alt: Content Rules overview
+.. .. figure:: ../../_robot/contentrules-start.png
+      :align: center
+      :alt: Content Rules overview
 
 If no content rules exist, the only option is an "Add content rule" button. Click that.
 
@@ -167,9 +167,11 @@ An "Add Rule" form comes up. Enter a descriptive title -- for this example, use:
 
 For the "Triggering event" select "Object modified". Leave "Enabled" checked, and "Stop executing rules" and "Cascading rule" unchecked.
 
-.. figure:: ../../_robot/contentrules-add.png
-   :align: center
-   :alt: Content Rules overview
+.. image:: addrule.png
+
+.. .. figure:: ../../_robot/contentrules-add.png
+      :align: center
+      :alt: Content Rules overview
 
 Click the "Save" button. At this point, you have essentially created a "container" for the content rule.
 
@@ -214,13 +216,13 @@ Now that you've set up a content rule, how does it actually get used?
 At this point, you have successfully created a content rule. However, this content rule isn't actually in use until it has been assigned and enabled on one or more folders.
 
 - Navigate to the folder where you want the content rule to be in effect.
-  This can be any folder on the Plone site or it can be for the entire Plone site ("Home").
+  This can be any folder on the Castle site or it can be for the entire Castle site ("Home").
   In this example we're going to the "News" folder.
 - Click on the "Rules" tab. From there you will see a drop down menu of possible content rules:
 
-.. figure:: ../../_robot/contentrules-assign.png
-   :align: center
-   :alt: assign content rules
+.. .. figure:: ../../_robot/contentrules-assign.png
+      :align: center
+      :alt: assign content rules
 
 - Select the desired content rule ("Send Email..." in this example) and click on the "Add" button.
 

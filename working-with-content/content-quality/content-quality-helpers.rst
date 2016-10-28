@@ -1,5 +1,5 @@
 ===============================
-Content Quality helper tools
+Content Quality helper tools 
 ===============================
 
 .. admonition:: Description

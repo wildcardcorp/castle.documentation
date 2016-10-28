@@ -1,16 +1,16 @@
-Adding New Content
+Adding New Content 
 ==================
 
-
-.. include:: ../../_robot.rst
 
 
 A general overview of how to add new content items in Castle, including definitions of each standard content type.
 
 New content items are added via the **Add . . .** pop up menu:
 
-.. code:: robotframework
-   :class: hidden
+.. image:: Add.png
+
+.. .. code:: robotframework
+      :class: hidden
 
    *** Test Cases ***
 
@@ -32,9 +32,9 @@ New content items are added via the **Add . . .** pop up menu:
        ...  css=div.plone-toolbar-container
        ...  css=#plone-contentmenu-factories ul
 
-.. figure:: ../../_robot/adding-content_add-menu.png
-   :align: center
-   :alt: add-new-menu.png
+.. .. figure:: ../../_robot/adding-content_add-menu.png
+      :align: center
+      :alt: add-new-menu.png
 
 Adding content in Castle is done *placefully*, which means you should navigate to the section of your website where you want the new content to be placed **before** you use the **Add . . .** pop up menu.
 

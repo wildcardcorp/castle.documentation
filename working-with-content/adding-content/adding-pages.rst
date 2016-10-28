@@ -1,15 +1,16 @@
 Adding Pages
-============
+============ 
 
-.. include:: ../../_robot.rst
 
 Pages in Castle vary greatly, but all are single "web pages," of one sort or
 another.
 
 To add a page, use the **Add...** menu for a folder:
 
-.. code:: robotframework
-   :class: hidden
+.. image:: Add.png
+
+.. .. code:: robotframework
+      :class: hidden
 
    *** Test Cases ***
 
@@ -31,14 +32,16 @@ To add a page, use the **Add...** menu for a folder:
        ...  css=div.plone-toolbar-container
        ...  css=#plone-contentmenu-factories ul
 
-.. figure:: ../../_robot/adding-pages_add-menu.png
-   :align: center
-   :alt: add-new-menu.png
+.. .. figure:: ../../_robot/adding-pages_add-menu.png
+      :align: center
+      :alt: add-new-menu.png
 
 Select **Page** from the menu, and you'll see the *Add Page* screen:
 
-.. code:: robotframework
-   :class: hidden
+.. image:: AddPage.png
+
+.. .. code:: robotframework
+      :class: hidden
 
    *** Test Cases ***
 
@@ -53,9 +56,9 @@ Select **Page** from the menu, and you'll see the *Add Page* screen:
        ...  ${CURDIR}/../../_robot/adding-pages_add-form.png
        ...  css=#content
 
-.. figure:: ../../_robot/adding-pages_add-form.png
-   :align: center
-   :alt: Adding pages form
+.. .. figure:: ../../_robot/adding-pages_add-form.png
+      :align: center
+      :alt: Adding pages form
    
 Fill in the **Title** field and Castle will fill in the ID and Url field.  This screen also shows the state of the page, whether it is published, unpublished, or pending approval for publication. Click the **Create and Edit** button.  You will then see your page ready to be edited.
 

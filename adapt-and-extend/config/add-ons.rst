@@ -1,8 +1,9 @@
 Add-ons
-=======
+======= 
 
-.. include:: ../../_robot.rst
+..image:: AddOns.png
 
+..
 .. code:: robotframework
    :class: hidden
 
@@ -17,6 +18,7 @@ Add-ons
 .. figure:: ../../_robot/addon-setup.png
    :align: center
    :alt: Add-on configuration
+..
 
 Here you can activate and deactivate add-ons.
 

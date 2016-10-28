@@ -1,9 +1,8 @@
 Date and Time
-=============
+============= 
+.. image:: DateTime.png
 
-.. include:: ../../_robot.rst
-
-.. code:: robotframework
+.. .. code:: robotframework
    :class: hidden
 
    *** Test Cases ***
@@ -14,7 +13,7 @@ Date and Time
        ...  ${CURDIR}/../../_robot/date-setup.png
        ...  css=#content
 
-.. figure:: ../../_robot/date-setup.png
+.. .. figure:: ../../_robot/date-setup.png
    :align: center
    :alt: Date and time setup configuration
 
