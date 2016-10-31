@@ -1,0 +1,46 @@
+Editing Content - Format
+========================
+
+
+To edit content you can either find the content by clicking on **Manage Content** from the left hand menu and selecting the *Edit* icon from the actions menu
+
+.. image:: manageedit.png
+
+ or if you are already working with the content you want to edit just click **Edit** from the right hand menu which will bring up the pageready to be edited.
+
+
+.. image:: readytoedit.png
+
+The default page will show tiles for **Title**, **Description**, and **Text**.
+
+.. image:: defaultedit.png
+
+You can change the format of the tiles on your page by clicking the **Layout** button, then select **Customize**.
+
+.. image:: customize.png
+
+Select the tile you wish to format. Then click on the **Format** button.
+
+.. image:: format.png
+
+This will bring up a menu with two columns, one named **Tile** and the other named **Row**.  
+Under the **Tile** menu there are several options.
+
+- Background - this will add a shaded square background to the currently selected tile.
+- Background with rounded corners - this will added a shaded square background with rounded corners to the selected tile.
+- Padding right - this will add more space on the right of the selected tile
+- Padding left - this will add more space on the left of the selected tile
+- Padding top - this will add more space above the selected tile
+- Padding bottom - this will add more space below the selected tile
+- Remove format- this will remove all formating from the selected tile
+
+Under the **Row** column there are two options.
+
+- Dark Background - this adds a shaded background to the selected row
+- Remove format - this will remove all formating from the selected tile.
+
+When you have finished formating the tile click the **save** button at the top right of the screen.  This will take you out of the formating menu and take you back to the page.  You will then be able to see the results of your format changes.
+
+If at any time when in the format menu you wish to cancel your changes click the **Cancel** button in the upper right-hand corner of the screen.
+
+
